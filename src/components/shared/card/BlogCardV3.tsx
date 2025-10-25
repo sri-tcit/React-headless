@@ -40,8 +40,6 @@ const BlogCardV3 = ({ blog, className }: BlogCardV3Props) => {
         {/* blog content  */}
         <div className="px-5 py-4 sm:px-4 xl:px-0 xl:py-8">
           {/* blog badge  */}
-          {console.log(blog.badges, 'blog badge')}
-
           {blog?.badges && blog.badges.length > 0 && (
             <div className="mb-6 space-x-2">
               {blog.badges.map((badge: string, index: number) => (

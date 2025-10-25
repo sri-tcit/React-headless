@@ -10,7 +10,6 @@ interface BlogProps {
 
 const Blog = ({ badgeClass, data }: BlogProps) => {
   const { label, title, description, recentNews } = data || {};
-  console.log(data, 'blog section data');
   // Handle case where we have less than 3 blog posts
   const blogs = recentNews || [];
   const firstBlog = blogs[0];

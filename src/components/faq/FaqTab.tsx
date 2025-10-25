@@ -3,31 +3,42 @@ import RevealAnimation from '../animation/RevealAnimation';
 import FaqTabContent from './FaqTabContent';
 import FaqTabList from './FaqTabList';
 
-const FaqTab = () => {
+interface FaqTabProps {
+  data?: any;
+}
+
+const FaqTab = ({ data }: FaqTabProps) => {
+  const { label, title, description, faqListing } = data || {};
+
   return (
     <section className="py-[80px]">
       <div className="main-container">
         <div className="text-center space-y-5">
-          <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan">FAQ</span>
-          </RevealAnimation>
+          {label && (
+            <RevealAnimation delay={0.2}>
+              <span className="badge badge-cyan">{label}</span>
+            </RevealAnimation>
+          )}
           <div className="space-y-3 text-center">
-            <RevealAnimation delay={0.3}>
-              <h2>Commonly asked questions</h2>
-            </RevealAnimation>
-            <RevealAnimation delay={0.4}>
-              <p className="max-w-[600px] mx-auto">
-                By offering concise and informative responses, this section helps users find solutions without the need
-                to contact customer support, saving time
-              </p>
-            </RevealAnimation>
+            {title && (
+              <RevealAnimation delay={0.3}>
+                <h2>{title}</h2>
+              </RevealAnimation>
+            )}
+            {description && (
+              <RevealAnimation delay={0.4}>
+                <p className="max-w-[600px] mx-auto">
+                  {description}
+                </p>
+              </RevealAnimation>
+            )}
           </div>
         </div>
         <RevealAnimation delay={0.5}>
           <div className="py-[70px]">
             <TabProvider defaultValue={0}>
-              <FaqTabList />
-              <FaqTabContent />
+              <FaqTabList faqListing={faqListing} />
+              <FaqTabContent faqListing={faqListing} />
             </TabProvider>
           </div>
         </RevealAnimation>

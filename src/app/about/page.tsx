@@ -8,12 +8,30 @@ import OurMission from '@/components/aboutpage-01/OurMission';
 import Process from '@/components/integration-02/Process';
 import ContactUs from '@/components/homepage-14/ContactUs';
 import CTA20 from '@/components/homepage-20/CTA';
+import { Client } from '@/graphql/client';
+import { ABOUT_QUERY } from '@/graphql/queries/about';
 
 export const metadata: Metadata = {
   title: 'About - NextSaaS',
 };
 
-const AboutPage = () => {
+const AboutPage = async() => {
+    let about: any = null;
+  
+    try {
+      const data = await Client.request(ABOUT_QUERY);
+      about = data?.about;
+      
+      // console.log('Fetched about data:', about);
+
+      
+    } catch (err) {
+      console.error('GraphQL fetch error:', err);
+    }
+    
+    const { aboutTitle, aboutCTA, passionSection, steps, ourMission } = about;
+
+
   return (
     <>
       <NavbarOne
@@ -24,16 +42,20 @@ const AboutPage = () => {
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero
           className="bg-background-3 dark:bg-background-7"
-          title="About us 1"
-          heading="About us"
-          link="/about-01"
+          title={aboutTitle?.label }
+          heading={aboutTitle?.title }
+          link="/about"
         />
-        <VisionStatement />
-        <OurMission />
+        {passionSection && <VisionStatement data={passionSection} />}
+        {ourMission && <OurMission data={ourMission} />}
       </main>
-      <Process />
+      {steps && <Process data={steps} />}
       <ContactUs />
-      <CTA20 />
+
+      {
+        aboutCTA && <CTA20 data={aboutCTA} />
+      }
+
       <FooterOne />
     </>
   );

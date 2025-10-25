@@ -17,6 +17,8 @@ import CTA20 from '@/components/homepage-20/CTA';
 import Image from 'next/image';
 import gradient15 from '@public/images/gradient/gradient-15.png';
 import gradient50 from '@public/images/gradient/gradient-50.png';
+import { Client } from '@/graphql/client';
+import { CARDLIST_QUERY } from '@/graphql/queries/cardList';
 
 const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
 
@@ -24,7 +26,28 @@ export const metadata: Metadata = {
   title: 'Credit Cards - NextSaaS',
 };
 
-const CreditCardsPage = () => {
+const CreditCardsPage = async() => {
+
+   let cardList: any = null;
+  
+    try {
+      const data = await Client.request(CARDLIST_QUERY);
+      console.log('Fetched card list data:', data); 
+      cardList = data?.cardsListing; 
+    } catch (err) {
+      console.error('GraphQL fetch error:', err);
+    }
+
+    const { ctaSection, faqSection } = cardList
+   
+    if (!cardList) {
+      return (
+        <main className="flex min-h-screen items-center justify-center">
+          <p className="text-lg text-gray-500">No home data available.</p>
+        </main>
+      );
+    }
+
   return (
     <Fragment>
       <NavbarOne
@@ -38,8 +61,10 @@ const CreditCardsPage = () => {
           <Pricing />
         </div>
 
-        <FaqTab />
-        <CTA20 />
+        {faqSection && <FaqTab data={faqSection} />}
+        {
+          ctaSection && <CTA20 data={ctaSection} />
+        }
       </main>
       <FooterOne />
     </Fragment>

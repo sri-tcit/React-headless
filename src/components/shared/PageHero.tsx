@@ -18,12 +18,6 @@ const PageHero = ({ className, title, heading, link }: PageHeroProps) => {
           <RevealAnimation delay={0.1}>
             <span className="hero-badge text-tagline-1 inline-block text-secondary dark:text-accent">
               <Link
-                href="/"
-                className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300">
-                Home
-              </Link>
-              <span className="mx-2">-</span>
-              <Link
                 href={link || '/'}
                 className="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300">
                 {title}
