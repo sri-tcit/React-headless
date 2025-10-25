@@ -2,6 +2,12 @@ import FooterOne from '@/components/shared/footer/FooterOne';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import PageHero from '@/components/shared/PageHero';
+import VisionStatement from '@/components/aboutpage-01/VisionStatement';
+import OurMission from '@/components/aboutpage-01/OurMission';
+import Process from '@/components/integration-02/Process';
+import ContactUs from '@/components/homepage-14/ContactUs';
+import CTA20 from '@/components/homepage-20/CTA';
 
 export const metadata: Metadata = {
   title: 'About - NextSaaS',
@@ -9,26 +15,29 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <Fragment>
+    <>
       <NavbarOne
-        className="border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 border"
-        btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
+        megaMenuColor="dark:bg-background-7"
+        className="border border-stroke-2 bg-accent/60 backdrop-blur-[25px] dark:border-stroke-6 dark:bg-background-9"
+        btnClassName="btn-primary hover:bg-secondary dark:hover:btn-accent"
       />
-      <main className="bg-background-2 dark:bg-background-5 min-h-screen pt-32">
-        <div className="main-container px-5">
-          <div className="py-16">
-            <h1 className="text-heading-1 text-primary-50 mb-8">About Us</h1>
-            <p className="text-body-1 text-accent/60">
-              This is the about page. Add your about content here.
-            </p>
-          </div>
-        </div>
+      <main className="bg-background-3 dark:bg-background-7">
+        <PageHero
+          className="bg-background-3 dark:bg-background-7"
+          title="About us 1"
+          heading="About us"
+          link="/about-01"
+        />
+        <VisionStatement />
+        <OurMission />
       </main>
+      <Process />
+      <ContactUs />
+      <CTA20 />
       <FooterOne />
-    </Fragment>
+    </>
   );
 };
 
 AboutPage.displayName = 'AboutPage';
 export default AboutPage;
-
