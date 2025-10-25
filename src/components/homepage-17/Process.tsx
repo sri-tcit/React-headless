@@ -17,7 +17,7 @@ const Process = () => {
             <span className="badge inline-block badge-primary-light">Our Process</span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <h2 className="lg:max-w-[396px]">From Idea to app store simplified</h2>
+            <h2 className="lg:max-w-[396px]">Easy to apply in 3 steps </h2>
           </RevealAnimation>
         </div>
         <div ref={ref} className="flex flex-col md:flex-row items-center md:items-start lg:items-center gap-[62px]">

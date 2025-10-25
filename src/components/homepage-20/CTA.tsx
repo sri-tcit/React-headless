@@ -6,7 +6,9 @@ import LinkButton from '../ui/button/LinkButton';
 
 const CTA = () => {
   return (
-    <section className="pt-[100px] md:pt-[150px] pb-[50px] md:pb-[75px] bg-background-3 dark:bg-background-7" aria-label="Call to Action">
+    <section
+      className="pt-[100px] md:pt-[50px] pb-[50px] md:pb-[75px] bg-background-3 dark:bg-background-7"
+      aria-label="Call to Action">
       <div className="max-w-[1440px] mx-auto">
         <div className="bg-white dark:bg-background-6 py-[76px] rounded-[30px] relative overflow-hidden">
           {/* left bg  */}

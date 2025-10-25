@@ -120,7 +120,7 @@ const Hero = () => {
                         href="/contact-us"
                         className="btn btn-white btn-xl hover:btn-secondary w-full dark:btn-black dark:hover:btn-accent md:w-auto"
                         aria-label="Book a free consultation call">
-                        Book a free call
+                        Apply Now
                       </LinkButton>
                     </div>
                   </RevealAnimation>
@@ -136,7 +136,7 @@ const Hero = () => {
         </RevealAnimation>
       </div>
       {/* Client Logos Section */}
-      <aside className="main-container relative mt-[64px] lg:mt-[120px] z-10" aria-label="Our Clients">
+      {/* <aside className="main-container relative mt-[64px] lg:mt-[120px] z-10" aria-label="Our Clients">
         <RevealAnimation delay={0.2}>
           <div
             className="flex items-center flex-wrap md:flex-nowrap justify-center gap-4 md:gap-x-4 lg:gap-x-8"
@@ -149,7 +149,7 @@ const Hero = () => {
             ))}
           </div>
         </RevealAnimation>
-      </aside>
+      </aside> */}
     </section>
   );
 };

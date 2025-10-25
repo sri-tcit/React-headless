@@ -13,33 +13,33 @@ const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
 export default function Pricing() {
   return (
     // <section className="py-14 md:py-20 xl:py-[120px]">
-      <div className="bg-background-2 dark:bg-background-5 mx-auto max-w-[1440px] space-y-[70px] rounded-[20px] px-8 py-20 xl:rounded-[32px] xl:px-16 xl:py-[120px]">
-        <div className="mx-auto max-w-2xl space-y-3 text-center">
-          <RevealAnimation delay={0.1}>
-            <span className="badge badge-cyan">Our pricing</span>
-          </RevealAnimation>
-          <RevealAnimation delay={0.2}>
-            <h2>Select the pricing plan that best suits your needs.</h2>
-          </RevealAnimation>
-        </div>
-        <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
-          {blogs.map((blog, index) => (
-            <RevealAnimation delay={0.6 + index * 0.1} key={blog.slug}>
-              <BlogCardV1 blog={blog} />
-            </RevealAnimation>
-          ))}
-        </div>
-        <RevealAnimation delay={0.9}>
-          <div className="mt-10 flex justify-center md:mt-14">
-            <LinkButton
-              href="/blog-01"
-              className="btn btn-white btn-lg md:btn-xl hover:btn-primary dark:btn-transparent mx-auto w-full md:mx-0 md:w-auto"
-              aria-label="View all blog posts">
-              Explore all
-            </LinkButton>
-          </div>
+    <div className="bg-background-2 dark:bg-background-5 mx-auto max-w-[1440px] space-y-[70px] rounded-[20px] px-8 py-20 xl:rounded-[32px] xl:px-16 xl:py-[50px]">
+      <div className="mx-auto max-w-2xl space-y-3 text-center">
+        <RevealAnimation delay={0.1}>
+          <span className="badge badge-cyan">Credit cards</span>
         </RevealAnimation>
-        {/* <div className="grid grid-cols-12 gap-y-5 md:gap-6 xl:gap-8">
+        <RevealAnimation delay={0.2}>
+          <h2>Select Credit cards that best suits your needs.</h2>
+        </RevealAnimation>
+      </div>
+      <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
+        {blogs.map((blog, index) => (
+          <RevealAnimation delay={0.6 + index * 0.1} key={blog.slug}>
+            <BlogCardV1 blog={blog} customLink="/card-detail" />
+          </RevealAnimation>
+        ))}
+      </div>
+      <RevealAnimation delay={0.9}>
+        <div className="mt-10 flex justify-center md:mt-14">
+          <LinkButton
+            href="/blog-01"
+            className="btn btn-white btn-lg md:btn-xl hover:btn-primary dark:btn-transparent mx-auto w-full md:mx-0 md:w-auto"
+            aria-label="View all blog posts">
+            Explore all
+          </LinkButton>
+        </div>
+      </RevealAnimation>
+      {/* <div className="grid grid-cols-12 gap-y-5 md:gap-6 xl:gap-8">
           <RevealAnimation delay={0.3}>
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
               <div>
@@ -132,7 +132,7 @@ export default function Pricing() {
             </RevealAnimation>
           ))}
         </div> */}
-      </div>
+    </div>
     // </section>
   );
 }
