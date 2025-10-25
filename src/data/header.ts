@@ -36,12 +36,12 @@ export const navigationItems: NavigationItem[] = [
     href: '/about',
     hasDropdown: false,
   },
-  {
-    id: 'contact',
-    label: 'Contact Us',
-    href: '/contact-us',
-    hasDropdown: false,
-  },
+  // {
+  //   id: 'contact',
+  //   label: 'Contact Us',
+  //   href: '/contact-us',
+  //   hasDropdown: false,
+  // },
 ];
 
 // About Menu Data

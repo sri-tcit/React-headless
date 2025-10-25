@@ -17,7 +17,8 @@ const clientLogos = [
   { id: 5, src: clientLogo10, alt: 'Client logo 10' },
 ];
 
-const Hero = () => {
+const Hero = ({ data }: { data: any }) => {
+  console.log('Hero section data:', data);
   return (
     <section className="pt-36 lg:pt-[150px] md:pt-[180px]">
       <div className="main-container">
@@ -26,21 +27,18 @@ const Hero = () => {
             <div className="text-center md:text-left">
               <div className="space-y-2.5 lg:space-y-4">
                 <RevealAnimation delay={0.1}>
-                  <h1 className="lg:max-w-[645px]">Master your money with confidence</h1>
+                  <h1 className="lg:max-w-[645px]">{data.heading}</h1>
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
-                  <p className="lg:max-w-[465px]">
-                    Managing finances can be simple. With NextSaaS, track spending, save, and plan for the future with
-                    ease and clarity.
-                  </p>
+                  <p className="lg:max-w-[465px]">{data.subheading}</p>
                 </RevealAnimation>
               </div>
               <RevealAnimation delay={0.3}>
                 <div className="mt-10 lg:mt-14">
                   <LinkButton
-                    href="/pricing-01"
+                    href={data.buttonlink || '#'}
                     className="hero-button btn btn-md md:btn-xl hover:btn-secondary btn-primary dark:btn-accent dark:hover:btn-white-dark w-[90%] md:w-auto">
-                    Get started for free
+                    {data.buttontext}
                   </LinkButton>
                 </div>
               </RevealAnimation>
@@ -48,7 +46,7 @@ const Hero = () => {
             <div className="lg:max-w-[277px] w-full">
               <div className="divider border-t border-stroke-2 dark:border-stroke-6 w-0" />
             </div>
-            <div className="flex gap-4 items-center justify-center md:justify-start avatar-group-images">
+            {/* <div className="flex gap-4 items-center justify-center md:justify-start avatar-group-images">
               <AvatarGroup />
               <RevealAnimation delay={0.8}>
                 <div>
@@ -56,7 +54,7 @@ const Hero = () => {
                   <p className="text-tagline-3">Customers Across the globe</p>
                 </div>
               </RevealAnimation>
-            </div>
+            </div> */}
           </div>
           <RevealAnimation delay={0.6} duration={2} useSpring={true} direction="up">
             <figure className="max-w-[300px] md:max-w-[320px] lg:max-w-[400px] 2xl:max-w-[700px] relative -z-0 md:-mt-72 lg:-mt-28 2xl:-mt-36">

@@ -11,6 +11,11 @@ interface BlogCardV2Props {
 }
 
 const BlogCardV2 = ({ blog, className }: BlogCardV2Props) => {
+  if (!blog) return null;
+
+  const imageurl = process.env.strapi_image_url || '';
+  const blogSlug = blog.slug || '#';
+  const blogThumbnail = imageurl + blog.cover.url;
   return (
     <article className="group col-span-12 lg:col-span-5 xl:col-span-6">
       <div
@@ -22,10 +27,10 @@ const BlogCardV2 = ({ blog, className }: BlogCardV2Props) => {
 
         {/* blog img  */}
         <figure className="w-full overflow-hidden rounded-[20px] lg:h-[352px] xl:h-[367px] xl:max-w-[629px]">
-          <Link href={`/blog/${blog.slug}`}>
+          <Link href={`/blog/${blogSlug}`}>
             <Image
-              src={blog.thumbnail}
-              alt="Digital funds back-office illustration"
+              src={blogThumbnail}
+              alt={blog.title || 'Blog post illustration'}
               className="size-full object-cover"
               loading="lazy"
               width={629}
@@ -36,14 +41,15 @@ const BlogCardV2 = ({ blog, className }: BlogCardV2Props) => {
         {/* blog content  */}
         <div className="px-5 pb-8 sm:px-8">
           {/* blog badge  */}
-          <div className="mb-6 space-x-2">
-            <span className="badge badge-gray-light">
-              <Link href={`/blog-03?category=${blog.tag.toLowerCase()}`}>{blog?.tag}</Link>
-            </span>
-            <span className="badge badge-gray-light">
-              <Link href={`/blog-03?category=${blog.tag}`}>{blog?.tag}</Link>
-            </span>
-          </div>
+          {blog?.badges && blog.badges.length > 0 && (
+            <div className="mb-6 space-x-2">
+              {blog.badges.map((badge: string, index: number) => (
+                <span className="badge badge-gray-light" key={index}>
+                  {badge.badge}
+                </span>
+              ))}
+            </div>
+          )}
           {/* time and title  */}
           <div className="mb-7 space-y-4">
             {/* blog time  */}
@@ -54,7 +60,7 @@ const BlogCardV2 = ({ blog, className }: BlogCardV2Props) => {
                   <CalendarIcon />
                 </span>
                 <time dateTime="2025-05-14" className="text-tagline-2 text-secondary/60 dark:text-accent/60">
-                  {blog.publishDate}
+                  {blog.date}
                 </time>
               </div>
               <div className="text-stroke-2 dark:text-stroke-6 px-4" aria-hidden="true">
@@ -65,22 +71,22 @@ const BlogCardV2 = ({ blog, className }: BlogCardV2Props) => {
                 <span aria-hidden="true">
                   <StopwatchIcon />
                 </span>
-                <span className="text-tagline-2 text-secondary/60 dark:text-accent/60">{blog.readTime}</span>
+                <span className="text-tagline-2 text-secondary/60 dark:text-accent/60">
+                  {blog.readTime || '5 min read'}
+                </span>
               </div>
             </div>
             {/* blog title  */}
             <h3 className="text-heading-6 xl:text-heading-5 line-clamp-1">
-              <Link
-                href={`/blog/${blog.slug}`}
-                aria-label="Read full article about Digital is making place in funds back-office">
-                {blog.title}
+              <Link href={`/blog/${blogSlug}`} aria-label={`Read full article about ${blog.title || 'this post'}`}>
+                {blog.title || 'Untitled Post'}
               </Link>
             </h3>
           </div>
           {/* blog link tag  */}
           <div>
             <LinkButton
-              href={`/blog/${blog.slug}`}
+              href={`/blog/${blogSlug}`}
               className="btn btn-white hover:btn-secondary btn-md dark:btn-transparent dark:hover:btn-accent">
               Read more
             </LinkButton>
