@@ -17,7 +17,7 @@ import StackCardItem from '../ui/stack-card/StackCardItem';
 import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
 
 const Integration = ({ data }: { data: any }) => {
-  // console.log('Integration section data:', data);
+  console.log('Integration section data:', data);
   const imageurl = process.env.strapi_image_url;
 
   return (
@@ -61,9 +61,9 @@ const Integration = ({ data }: { data: any }) => {
                         </figure>
                         <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
                           <figcaption className="space-y-2">
-                            <h5>Design tailored AI strategies.</h5>
+                            <h5>{item.title}</h5>
                             <p className="max-w-[250px]">
-                              Tailored AI strategies align solutions to drive smarter decisions.
+                              {item.description}
                             </p>
                           </figcaption>
                           <figure className="max-w-[385px] w-full">
