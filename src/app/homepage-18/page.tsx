@@ -24,15 +24,15 @@ const Homepage18 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
       <main className="bg-background-2 dark:bg-background-5">
-        {/* <Hero />
+        {/* 
         <Feature />
         <Services /> */}
-        <Integration />
+        
         {/* <Projects />
         <Counter />
         <Testimonial />
         <Pricing />
-        <CTA /> */}
+         */}
       </main>
       {/* <FooterFour className="border-t border-t-[#303032] dark:border-t-0 max-sm:z-[11]" /> */}
     </Fragment>

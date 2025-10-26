@@ -25,7 +25,7 @@ const Homepage27 = () => {
         btnClassName="btn-secondary hover:btn-white dark:btn-accent dark:hover:btn-white-dark"
       />
       <main className="bg-background-2 dark:bg-background-5 overflow-x-hidden">
-        <Hero />
+        
         <Services />
         <Features />
         <FeaturesV2 />

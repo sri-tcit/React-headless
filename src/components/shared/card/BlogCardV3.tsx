@@ -13,7 +13,7 @@ interface BlogCardV3Props {
 const BlogCardV3 = ({ blog, className }: BlogCardV3Props) => {
   if (!blog) return null;
 
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   const blogSlug = blog.slug || '#';
   const blogThumbnail = imageurl + blog.cover.url;
 
@@ -42,7 +42,7 @@ const BlogCardV3 = ({ blog, className }: BlogCardV3Props) => {
           {/* blog badge  */}
           {blog?.badges && blog.badges.length > 0 && (
             <div className="mb-6 space-x-2">
-              {blog.badges.map((badge: string, index: number) => (
+              {blog.badges.map((badge: any, index: number) => (
                 <span className="badge badge-gray-light" key={index}>
                   {badge.badge}
                 </span>

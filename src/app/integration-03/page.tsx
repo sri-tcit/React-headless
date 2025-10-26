@@ -26,7 +26,7 @@ const Integration03 = () => {
           link="/integration-03"
         />
 
-        <Integration />
+        
         <CTAV1
           className="dark:bg-background-8 bg-white"
           badgeText="Get started"

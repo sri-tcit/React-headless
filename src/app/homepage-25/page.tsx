@@ -24,12 +24,12 @@ const HomePage25 = () => {
         btnClassName="btn-secondary hover:btn-white dark:hover:btn-white-dark dark:btn-accent"
       />
       <main className="bg-background-2 dark:bg-background-5 overflow-hidden">
-        <Hero />
+        
         <AchievementWrapper />
         <FeatureHighlights />
         <Feature />
         <FeatureV2 />
-        <Integration />
+        
         <IndustryCategories />
         <Testimonial />
         <Faq />

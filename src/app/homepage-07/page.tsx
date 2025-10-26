@@ -24,7 +24,7 @@ const Homepage07 = () => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-3 dark:bg-background-5">
-        <Hero />
+        
         <TrustedByUsers
           title="Countless users trust us completely."
           description="Boost your insights that help you to grow business"
@@ -34,7 +34,7 @@ const Homepage07 = () => {
         <WhyChooseUs />
         <Pricing />
         <FinanceIntro />
-        <Integration />
+        
         <Blog />
         <CTAV2
           className="bg-background-1 dark:bg-background-6"

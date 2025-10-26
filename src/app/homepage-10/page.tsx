@@ -22,13 +22,13 @@ const Homepage10 = () => {
         btnClassName="btn-secondary dark:btn-accent hover:btn-primary"
       />
       <main className="bg-background-3 dark:bg-background-7">
-        <Hero />
+        
         <Features />
         <SelectUs />
         <Services />
-        <Integration />
+        
         <Testimonial />
-        <CTA />
+        
       </main>
       <FooterThree />
     </Fragment>

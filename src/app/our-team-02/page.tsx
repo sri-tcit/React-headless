@@ -30,7 +30,7 @@ const OurTeam02 = () => {
           classname="pt-20 md:pt-24 lg:pt-[150px] xl:pt-[200px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-background-2 dark:bg-background-5"
         />
         <Features />
-        <CTA />
+        
       </main>
       <FooterThree />
     </Fragment>

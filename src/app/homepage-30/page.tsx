@@ -25,7 +25,7 @@ const Homepage30 = () => {
         btnClassName="btn-secondary hover:btn-white dark:hover:btn-white-dark"
       />
       <main className="bg-background-3 dark:bg-background-7 overflow-x-hidden">
-        <Hero />
+        
         <Testimonial />
         <Feature />
         <FeatureV2 />
@@ -34,7 +34,7 @@ const Homepage30 = () => {
         <Review />
         <Pricing />
         <Services />
-        <CTA />
+        
       </main>
       <FooterThree />
     </Fragment>

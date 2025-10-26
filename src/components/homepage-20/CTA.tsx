@@ -5,7 +5,7 @@ import LinkButton from '../ui/button/LinkButton';
 const CTA = ({ data }: { data: any }) => {
   const { label, title, description, buttonText, buttonLink, leftImage, rightImage } = data || {};
 
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
 
   return (
     <section

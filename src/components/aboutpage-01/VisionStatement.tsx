@@ -7,7 +7,7 @@ interface VisionStatementProps {
 
 const VisionStatement = ({ data }: VisionStatementProps) => {
   const { label, title, description, images } = data || {};
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
 
   // Split images into left column (first 2) and right column (3rd)
   const leftColumnImages = images || [];
@@ -35,7 +35,7 @@ const VisionStatement = ({ data }: VisionStatementProps) => {
         </div>
         {images && images.length > 0 && (
           <article className="grid grid-cols-12 gap-y-8 gap-x-8 justify-items-center">
-            {leftColumnImages.map((image, index) => {
+            {leftColumnImages.map((image:any, index:any) => {
               // Check if this is the last item and total count is odd
               const isLastOddItem = index === leftColumnImages.length - 1 && leftColumnImages.length % 2 !== 0;
               

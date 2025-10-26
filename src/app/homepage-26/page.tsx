@@ -19,7 +19,7 @@ const Homepage26 = () => {
     <Fragment>
       <NavbarFive btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent" />
       <main className="bg-background-4 dark:bg-background-9">
-        <Hero />
+        
         <WhyChooseUs />
         <Features />
         <Services />

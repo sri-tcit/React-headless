@@ -24,7 +24,7 @@ const HomePage09 = () => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-2 dark:bg-background-5">
-        <Hero />
+        
         <ClientsMarquee />
         <Features />
         <section className="py-16 md:py-20 lg:py-[90px] xl:py-[100px]">

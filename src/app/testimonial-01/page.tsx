@@ -27,7 +27,7 @@ const TestimonialOnePage = () => {
           className="pt-[100px] pb-[75px] md:pb-[100px] lg:pb-[200px] bg-background-1 dark:bg-background-6"
         />
         <Client />
-        <Integration />
+        
         <CTAV1
           className="dark:bg-background-6 bg-white"
           badgeClass="badge-green"

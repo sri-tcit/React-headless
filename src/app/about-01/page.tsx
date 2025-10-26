@@ -60,7 +60,7 @@ const AboutPage01 = () => {
           title="Real people. Real results."
           description="“Nextsaas delivered our entire platform ahead of schedule—flawless execution and real partnership.”"
         />
-        <CTA />
+        
       </main>
       <FooterThree />
     </>

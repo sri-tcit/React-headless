@@ -18,7 +18,7 @@ import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
 
 const Integration = ({ data }: { data: any }) => {
   console.log('Integration section data:', data);
-  const imageurl = process.env.strapi_image_url;
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL;
 
   return (
     <section className="pt-16 md:pt-20 lg:pt-[90px] xl:pt-[150px] pb-16 md:pb-20 lg:pb-[90px] xl:pb-[250px]">

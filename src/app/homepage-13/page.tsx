@@ -25,12 +25,12 @@ const Homepage13 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
       <main className="bg-background-4 dark:bg-background-9">
-        <Hero />
+        
         <Feature />
         <Benefits />
         <Services />
         <FeatureV2 />
-        <Integration />
+        
         <CaseStudy />
         <FAQ />
         <ReviewsV1 badgeColor="badge-cyan" background="dark:bg-background-6 pb-24 md:pb-36 lg:pb-44 xl:pb-[200px]" />

@@ -24,7 +24,7 @@ const Homepage29 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
       <main className="bg-white dark:bg-background-7">
-        <Hero />
+        
         <Statistics />
         <WhyUs />
         <Services />
@@ -32,7 +32,7 @@ const Homepage29 = () => {
         <Testimonials />
         <Blog />
         <FAQ />
-        <CTA />
+        
       </main>
       <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
     </Fragment>

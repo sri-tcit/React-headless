@@ -23,7 +23,7 @@ const HomePage21 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
       <main className="bg-white dark:bg-background-7">
-        <Hero />
+        
         {/* <About />
         <Features />
         <WhyChooseUs />
@@ -39,7 +39,7 @@ const HomePage21 = () => {
           badgeClassName="badge-green"
         />
         <ContactUs />
-        <CTA /> */}
+         */}
       </main>
       {/* <FooterFour /> */}
     </>

@@ -23,14 +23,14 @@ const Homepage17 = () => {
         btnClassName="btn-secondary hover:btn-white dark:btn-accent dark:hover:btn-white-dark"
       />
       <main className="bg-background-2 dark:bg-background-5">
-        <Hero />
+        
         <WhatWeOffer />
         <Process />
         <WhyChooseUs />
         <Features />
-        <Integration />
+        
         <Pricing />
-        <CTA />
+        
       </main>
       <FooterThree />
     </Fragment>

@@ -23,7 +23,7 @@ const OurServices03 = () => {
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero title="Our Services 03" heading="Our Services" link="/our-services-03" />
         <Services />
-        <Integration />
+        
         <UseCases />
         <Feature
           btnClassName="btn btn-md hover:btn-primary btn-white"

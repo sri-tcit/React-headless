@@ -22,7 +22,7 @@ const Homepage31 = () => {
         btnClassName="btn-green hover:btn-white dark:hover:btn-white-dark"
       />
       <main className="bg-background-2 dark:bg-background-6">
-        <Hero />
+        
         <Features />
         <SuccessStats />
         <WhyUs />

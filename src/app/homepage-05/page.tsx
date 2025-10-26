@@ -25,12 +25,12 @@ const HomePage02 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent border-0"
       />
       <main className="bg-background-2 dark:bg-background-7">
-        <Hero />
+        
         <Feature />
         <Services />
         <Process />
         <Faq />
-        <Integration />
+        
         <Number />
         <Team className="dark:bg-background-5 py-[100px] lg:py-[150px] xl:py-[200px]" badgeColor="badge-green" />
         <CTAV1

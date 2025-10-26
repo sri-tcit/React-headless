@@ -24,10 +24,10 @@ const HomePage06 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent border-0"
       />
       <main className="dark:bg-background-7 overflow-x-hidden bg-white">
-        <Hero />
+        
         <Services />
         <About />
-        <Integration />
+        
         <Faq />
         <Testimonial
           badgeText="Review"

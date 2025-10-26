@@ -63,7 +63,7 @@ interface HeroProps {
 }
 
 const Hero = ({ data }: HeroProps) => {
-  const imageUrl = process.env.strapi_image_url || '';
+  const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   const heading = data?.heading || 'Apps made for the future!';
   const subheading = data?.subheading || 'From concept to launch, we design and develop mobile and web apps that drive real results.';
   const buttonText = data?.buttontext || 'Apply Now';

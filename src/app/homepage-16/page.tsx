@@ -24,8 +24,8 @@ const HomePage16 = () => {
         btnClassName="btn-secondary hover:btn-white dark:btn-accent dark:hover:btn-white-dark"
       />
       <main className="dark:bg-background-6">
-        <Hero />
-        <Integration />
+        
+        
         <Feature />
         <Steps />
         <FeatureV2 />
@@ -39,7 +39,7 @@ const HomePage16 = () => {
         />
         <Pricing />
         <Publish />
-        <CTA />
+        
       </main>
       <FooterOne />
     </>

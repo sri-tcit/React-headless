@@ -27,7 +27,7 @@ const Homepage23 = () => {
         btnClassName="btn-secondary hover:btn-white dark:btn-accent dark:hover:btn-white-dark"
       />
       <main className="bg-background-2 dark:bg-background-5">
-        <Hero />
+        
         <Clients />
         <Feature />
         <FeatureV2 />
@@ -37,7 +37,7 @@ const Homepage23 = () => {
         <Testimonial />
         <Blog />
         <Contact />
-        <CTA />
+        
       </main>
       <FooterOne />
     </Fragment>

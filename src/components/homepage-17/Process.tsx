@@ -55,7 +55,7 @@ const Process = ({ data }: ProcessProps) => {
     triggerOnScroll: true,
   });
 
-  const imageUrl = process.env.strapi_image_url || '';
+  const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   const label = data?.label || 'Our Process';
   const title = data?.title || 'Easy to apply in 3 steps';
   const steps = data?.stepItems || defaultSteps;

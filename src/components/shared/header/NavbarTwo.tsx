@@ -70,11 +70,7 @@ const NavbarTwo: FC<NavbarTwoProps> = ({ className, megaMenuColor, btnClassName 
               })}
             </ul>
           </nav>
-          <NavCTAButton
-            href="/signup-01"
-            btnClassName={cn(isScrolled && 'btn-white', btnClassName)}
-            label="Get started"
-          />
+         
           {/* mobile menu btn */}
           <MobileMenuButton />
         </div>

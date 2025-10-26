@@ -25,7 +25,7 @@ const HomePage11 = () => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-3 dark:bg-background-7">
-        <Hero />
+        
         <CustomerFeedback />
         <FeaturesHighlight />
         <Features />
@@ -38,7 +38,7 @@ const HomePage11 = () => {
         <Pricing />
         <Reviews />
         <Faq />
-        <CTA />
+        
       </main>
       <FooterThree />
     </>

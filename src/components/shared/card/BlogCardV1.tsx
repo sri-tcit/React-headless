@@ -12,7 +12,7 @@ interface BlogCardV1Props {
 
 const BlogCardV1 = ({ blog, className, customLink }: BlogCardV1Props) => {
   const linkHref = `${customLink}/${blog.slug}` || `/blog/${blog.slug}`;
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   return (
     <article>
       <div

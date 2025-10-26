@@ -4,7 +4,7 @@ import LinkButton from '../ui/button/LinkButton';
 
 const Solutions = ({ data }: { data: any }) => {
 
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
 
 
   console.log('Solutions section data:', data.serviceitems);
@@ -26,7 +26,7 @@ const Solutions = ({ data }: { data: any }) => {
           <div className="space-y-14">
             <div className="grid grid-cols-12 items-center justify-center gap-y-7 md:gap-x-9">
               {data.serviceitems.length > 0 &&
-                data.serviceitems.map((item, idx) => (
+                data.serviceitems.map((item: any, idx: any) => (
                   <RevealAnimation key={item.id} delay={0.4 + idx * 0.1}>
                     <div className="p-6 sm:p-8 bg-white dark:bg-background-8 rounded-[20px] max-w-full md:max-w-[405px] w-full space-y-6 col-span-12 md:col-span-6 lg:col-span-4">
                       <img

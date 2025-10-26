@@ -26,7 +26,7 @@ const Homepage32 = () => {
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
       <main className="bg-white dark:bg-background-6">
-        <Hero />
+        
         <Services />
         <Highlights />
         <Feature />
@@ -38,7 +38,7 @@ const Homepage32 = () => {
           background="lg:py-[150px] sm:py-[100px] py-20 bg-background-2 dark:bg-background-6"
           sliderClassName="bg-white dark:bg-background-5"
         />
-        <CTA />
+        
         <Blog />
         <NewsLetter />
       </main>

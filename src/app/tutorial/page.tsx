@@ -31,7 +31,7 @@ const Tutorial = () => {
         <Features />
         <Tutorials />
         <Services />
-        <Integration />
+        
         <Community />
         <CTAV1
           className="dark:bg-background-6 bg-white"

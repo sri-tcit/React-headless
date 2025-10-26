@@ -24,7 +24,7 @@ const TestimonialTwoPage = () => {
         <PageHero title="Testimonial-02" heading="Testimonial-02" link="/testimonial-02" />
         <TestimonialMarquee />
         <Experience />
-        <Integration />
+        
         <CTAV1
           className="dark:bg-background-6 bg-white"
           badgeClass="badge-cyan"

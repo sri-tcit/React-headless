@@ -23,11 +23,11 @@ const HomePage28 = () => {
         btnClassName="btn-primary hover:btn-white dark:hover:btn-accent"
       />
       <main className="bg-background-1 dark:bg-background-6">
-        <Hero />
+        
         <SelectUs />
         <CRMFeatures />
         <Pricing />
-        <Integration />
+        
         <HowItWork />
         <Testimonial
           badgeText="Reviews"

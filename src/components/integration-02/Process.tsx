@@ -12,7 +12,7 @@ interface ProcessProps {
 
 const Process = ({ data }: ProcessProps) => {
   const { label, title, stepItems } = data || {};
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
 
   return (
     <section className="pb-24 pt-14 md:pb-36 md:pt-16 lg:pb-44 lg:pt-[88px] xl:pb-[200px] xl:pt-[100px] bg-background-1 dark:bg-background-6">

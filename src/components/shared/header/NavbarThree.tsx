@@ -62,11 +62,7 @@ const NavbarThree = ({ btnClassName }: { btnClassName?: string }) => {
                 </ul>
               </nav>
               <div className="flex items-center gap-2">
-                <NavCTAButton
-                  href="/signup-01"
-                  btnClassName={cn('btn-primary hover:btn-white-dark dark:hover:btn-white', btnClassName)}
-                  label="Get started"
-                />
+              
                 {/* mobile menu btn */}
                 <MobileMenuButton />
               </div>

@@ -30,7 +30,7 @@ const AboutPage03 = () => {
         <Innovation />
         <Teams />
         <AboutMap />
-        <CTA />
+        
       </main>
       <FooterThree />
     </>

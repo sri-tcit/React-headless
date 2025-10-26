@@ -20,7 +20,7 @@ interface CardDetailPageProps {
   };
 }
 
-const CardDetailPage = async ({ params }: CardDetailPageProps) => {
+const CardDetailPage = async ({ params }: any) => {
   const { slug } = params;
   
   let cardData: any = null;

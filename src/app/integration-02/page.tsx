@@ -26,7 +26,7 @@ const Integration02 = () => {
           heading="Integration "
           link="/integration-02"
         />
-        <Integration />
+        
         <Process />
         <CTAV1
           className="dark:bg-background-8 bg-white"

@@ -23,7 +23,7 @@ const Homepage34 = () => {
     <Fragment>
       <NavbarFour />
       <main>
-        <Hero />
+        
         <Clients />
         <Steps />
         <Feature />
@@ -37,7 +37,7 @@ const Homepage34 = () => {
         />
         <Blog />
         <Contact />
-        <CTA />
+        
       </main>
       <FooterOne />
     </Fragment>

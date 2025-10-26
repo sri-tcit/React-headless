@@ -22,13 +22,13 @@ const Homepage32 = () => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-white dark:bg-black">
-        <Hero />
+        
         <Services />
         <ServicesV2 />
         <Features />
         <Testimonial />
         <Blog />
-        <CTA />
+        
       </main>
       <FooterOne />
     </Fragment>

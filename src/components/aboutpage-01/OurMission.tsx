@@ -7,7 +7,7 @@ interface OurMissionProps {
 
 const OurMission = ({ data }: OurMissionProps) => {
   const { label, title, description, image } = data || {};
-  const imageurl = process.env.strapi_image_url || '';
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
 
     console.log(data,'our mission data');
     

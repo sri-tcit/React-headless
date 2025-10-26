@@ -45,7 +45,7 @@ const newData = [
 ];
 
 const WhyChooseNextSaas = ({ data }: { data: any }) => {
-  const imageurl = process.env.strapi_image_url;
+  const imageurl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL;
   console.log(data,"data");
   
   // Split the feature list into two halves

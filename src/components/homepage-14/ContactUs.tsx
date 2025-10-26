@@ -72,7 +72,7 @@ const contactInfo = [
 ];
 
 const ContactUs = ({ data }: ContactUsProps) => {
-  const imageUrl = process.env.strapi_image_url || '';
+  const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   const title = data?.title || 'Still have questions?';
   const description = data?.description || "Have questions about your financial future? Let's talk.";
   const submitBtn = data?.submitBtn || 'Submit';

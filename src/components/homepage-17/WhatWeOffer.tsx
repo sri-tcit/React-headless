@@ -65,7 +65,7 @@ const servicesData: ServiceData[] = [
 ];
 
 const WhatWeOffer = ({ data }: WhatWeOfferProps) => {
-  const imageUrl = process.env.strapi_image_url || '';
+  const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   const label = data?.label || 'What we offer';
   const heading = data?.heading || 'End-to-end app development services.';
   const description = data?.description || 'Everything you need to launch, grow, and scale a successful app.';

@@ -23,11 +23,11 @@ const HomePage03 = () => {
         btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
       />
       <main className="bg-background-2 dark:bg-background-5 shadow-7">
-        <Hero />
+        
         <Features />
         <FeaturesV2 />
         <Pricing />
-        <Integration />
+        
         <Understanding />
         <Testimonial badgeText="Reviews" />
         <CTAV2
