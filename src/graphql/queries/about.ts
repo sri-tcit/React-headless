@@ -45,9 +45,6 @@ export const ABOUT_QUERY = gql`
       id
       title
       description
-      email
-      phone
-      address
       contactItems {
         icon {
           url

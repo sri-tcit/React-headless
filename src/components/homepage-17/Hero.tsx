@@ -69,7 +69,7 @@ const Hero = () => {
                       </p>
                     </RevealAnimation>
                   </div>
-                  <div className="flex items-center flex-col sm:flex-row justify-center gap-y-5 md:justify-start sm:gap-x-4 mb-10 lg:mb-14">
+                  {/* <div className="flex items-center flex-col sm:flex-row justify-center gap-y-5 md:justify-start sm:gap-x-4 mb-10 lg:mb-14">
                     <div className="flex -space-x-3.5" role="group">
                       <RevealAnimation delay={0.2} direction="right" offset={50}>
                         <figure>
@@ -112,7 +112,7 @@ const Hero = () => {
                         <p className="text-tagline-3 dark:text-secondary/60">Customers across the globe</p>
                       </RevealAnimation>
                     </div>
-                  </div>
+                  </div> */}
                   {/* btn-white */}
                   <RevealAnimation delay={0.8}>
                     <div className="w-[95%] mx-auto md:mx-0 md:w-full">

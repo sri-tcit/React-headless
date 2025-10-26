@@ -1,31 +1,9 @@
 import { gql } from 'graphql-request';
 
 export const CARDLIST_QUERY = gql`
-query Cardlist {
+query CardsListing {
   cardsListing {
-    createdAt
-    creditCards {
-      creditCards {
-        id
-        cover {
-          url
-          height
-          width
-        }
-        date
-        timeToRead
-        buttonText
-        buttonLink
-        title
-        badges {
-          badge
-          id
-        }
-      }
-      id
-      label
-      title
-    }
+    documentId
     ctaSection {
       id
       label
@@ -34,14 +12,14 @@ query Cardlist {
       buttonText
       buttonLink
       leftImage {
-        url
-        height
-        width
+         url
+            width
+            height
       }
       rightImage {
-        url
-        height
-        width
+         url
+            width
+            height
       }
     }
     faqSection {
@@ -50,13 +28,13 @@ query Cardlist {
       title
       description
       faqListing {
+        id
         categoryTitle
         faqItems {
-          answer
           id
           question
+          answer
         }
-        id
       }
     }
     heroTitle {
@@ -64,8 +42,58 @@ query Cardlist {
       label
       title
     }
-    publishedAt
+    creditCards {
+      id
+      label
+      title
+      cards {
+        documentId
+        cardName
+        slug
+        cardBenefits {
+          id
+          icon {
+            url
+            width
+            height
+          }
+          description
+        }
+        cardImage {
+          url
+          width
+          height
+        }
+        cardBanner {
+         url
+          width
+          height
+        }
+        badges {
+          id
+          badge
+        }
+        buttonText
+        buttonLink
+        heroBanner {
+          id
+          heading
+          subheading
+          buttontext
+          buttonlink
+          bannerImage {
+            url
+          width
+          height
+          }
+        }
+        createdAt
+        updatedAt
+        publishedAt
+      }
+    }
+    createdAt
     updatedAt
-    documentId
+    publishedAt
   }
 }`;
