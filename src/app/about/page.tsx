@@ -21,15 +21,11 @@ const AboutPage = async() => {
     try {
       const data = await Client.request(ABOUT_QUERY);
       about = data?.about;
-      
-      // console.log('Fetched about data:', about);
-
-      
     } catch (err) {
       console.error('GraphQL fetch error:', err);
     }
     
-    const { aboutTitle, aboutCTA, passionSection, steps, ourMission } = about;
+    const { aboutTitle, aboutCTA, passionSection, steps, ourMission , contactSection } = about;
 
 
   return (
@@ -50,8 +46,7 @@ const AboutPage = async() => {
         {ourMission && <OurMission data={ourMission} />}
       </main>
       {steps && <Process data={steps} />}
-      <ContactUs />
-
+      {contactSection && <ContactUs data={contactSection} />}
       {
         aboutCTA && <CTA20 data={aboutCTA} />
       }

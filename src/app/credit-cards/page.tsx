@@ -37,8 +37,6 @@ const CreditCardsPage = async() => {
     } catch (err) {
       console.error('GraphQL fetch error:', err);
     }
-
-    const { ctaSection, faqSection } = cardList
    
     if (!cardList) {
       return (
@@ -47,6 +45,8 @@ const CreditCardsPage = async() => {
         </main>
       );
     }
+
+    const { ctaSection, faqSection, creditCards } = cardList
 
   return (
     <Fragment>
@@ -57,9 +57,11 @@ const CreditCardsPage = async() => {
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero title="Cards" heading="Credit Cards" link="/credit-cards" />
         {/* <main className="bg-background-2 dark:bg-background-5 min-h-screen pt-32"> */}
-        <div className="main-container">
-          <Pricing />
-        </div>
+        {creditCards && (
+          <div className="main-container">
+            <Pricing data={creditCards} />
+          </div>
+        )}
 
         {faqSection && <FaqTab data={faqSection} />}
         {

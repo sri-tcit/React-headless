@@ -9,21 +9,82 @@ import { IBlogPost } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
 import BlogCardV1 from '@/components/shared/card/BlogCardV1';
 import LinkButton from '@/components/ui/button/LinkButton';
+
+interface CardBenefit {
+  id: string;
+  icon: {
+    url: string;
+    width: number;
+    height: number;
+  };
+  description: string;
+}
+
+interface Badge {
+  id: string;
+  badge: string;
+}
+
+interface CreditCard {
+  documentId: string;
+  cardName: string;
+  slug: string;
+  cardBenefits: CardBenefit[];
+  cardImage: {
+    url: string;
+    width: number;
+    height: number;
+  };
+  badges: Badge[];
+  buttonText: string;
+  buttonLink: string | null;
+}
+
+interface CreditCardsData {
+  id: string;
+  label: string;
+  title: string;
+  cards: CreditCard[];
+}
+
+interface PricingProps {
+  data?: CreditCardsData;
+}
+
 const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
-export default function Pricing() {
+
+export default function Pricing({ data }: PricingProps) {
+  // Transform credit cards data to IBlogPost format
+  const transformedCards: IBlogPost[] = data?.cards?.map((card) => ({
+    slug: card.slug,
+    title: card.cardName,
+    description: card.cardBenefits?.[0]?.description || '',
+    thumbnail: card.cardImage?.url || '',
+    tag: 'Credit Card',
+    author: '',
+    authorImage: card.cardBenefits?.[0]?.icon?.url || '',
+    publishDate: '',
+    readTime: '',
+    content: '',
+    badges: card.badges, // Pass all badges as array
+  })) || [];
+
+  // Use transformed cards if available, otherwise use blogs
+  const displayData = transformedCards.length > 0 ? transformedCards : blogs;
+
   return (
     // <section className="py-14 md:py-20 xl:py-[120px]">
     <div className="bg-background-2 dark:bg-background-5 mx-auto max-w-[1440px] space-y-[70px] rounded-[20px] px-8 py-20 xl:rounded-[32px] xl:px-16 xl:py-[50px]">
       <div className="mx-auto max-w-2xl space-y-3 text-center">
         <RevealAnimation delay={0.1}>
-          <span className="badge badge-cyan">Credit cards</span>
+          <span className="badge badge-cyan">{data?.label || 'Credit cards'}</span>
         </RevealAnimation>
         <RevealAnimation delay={0.2}>
-          <h2>Select Credit cards that best suits your needs.</h2>
+          <h2>{data?.title || 'Select Credit cards that best suits your needs.'}</h2>
         </RevealAnimation>
       </div>
       <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
-        {blogs.map((blog, index) => (
+        {displayData.map((blog, index) => (
           <RevealAnimation delay={0.6 + index * 0.1} key={blog.slug}>
             <BlogCardV1 blog={blog} customLink="/card-detail" />
           </RevealAnimation>

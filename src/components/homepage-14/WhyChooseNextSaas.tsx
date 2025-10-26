@@ -46,6 +46,14 @@ const newData = [
 
 const WhyChooseNextSaas = ({ data }: { data: any }) => {
   const imageurl = process.env.strapi_image_url;
+  console.log(data,"data");
+  
+  // Split the feature list into two halves
+  const features = data.featurelist || [];
+  const midpoint = Math.ceil(features.length / 2);
+  const leftFeatures = features.slice(0, midpoint);
+  const rightFeatures = features.slice(midpoint);
+  
   return (
     <section className="py-20 md:py-[90px] lg:py-[100px]" aria-label="Why choose NextSaaS">
       <div className="main-container">
@@ -73,8 +81,8 @@ const WhyChooseNextSaas = ({ data }: { data: any }) => {
             {/* content  */}
             <div className="max-w-[1178px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
               <div className="w-full gap-8 flex flex-col md:flex-row lg:flex-col">
-                {data.featurelist.length > 0 &&
-                  data.featurelist.slice(0, 3).map((item, index) => (
+                {leftFeatures.length > 0 &&
+                  leftFeatures.map((item: any, index: number) => (
                     <RevealAnimation delay={0.6 + index * 0.1} direction="left" key={item.id}>
                       <div className="space-y-3 md:max-w-[300px] w-full">
                         <Image
@@ -106,8 +114,8 @@ const WhyChooseNextSaas = ({ data }: { data: any }) => {
               </RevealAnimation>
               {/* right side feature  */}
               <div className="w-full gap-8 flex flex-col md:flex-row lg:flex-col lg:ml-4 xl:ml-0">
-                {data.featurelist.length > 0 &&
-                  data.featurelist.slice(0, 3).map((item, index) => (
+                {rightFeatures.length > 0 &&
+                  rightFeatures.map((item: any, index: number) => (
                     <RevealAnimation delay={0.6 + index * 0.1} direction="right" key={item.id}>
                       <div className="space-y-3 md:max-w-[300px] w-full">
                         <Image

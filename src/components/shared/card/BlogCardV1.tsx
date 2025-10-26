@@ -11,8 +11,8 @@ interface BlogCardV1Props {
 }
 
 const BlogCardV1 = ({ blog, className, customLink }: BlogCardV1Props) => {
-  const linkHref = customLink || `/blog/${blog.slug}`;
-
+  const linkHref = `${customLink}/${blog.slug}` || `/blog/${blog.slug}`;
+  const imageurl = process.env.strapi_image_url || '';
   return (
     <article>
       <div
@@ -22,7 +22,7 @@ const BlogCardV1 = ({ blog, className, customLink }: BlogCardV1Props) => {
         )}>
         <figure className="h-[260px] max-w-full overflow-hidden  xl:max-w-[409px]">
           <Image
-            src={blog?.thumbnail}
+            src={imageurl +blog?.thumbnail}
             width={409}
             height={250}
             alt="Illustration representing electronic prescription in finance sector"
@@ -31,17 +31,31 @@ const BlogCardV1 = ({ blog, className, customLink }: BlogCardV1Props) => {
           />
         </figure>
         <div className="space-y-6 p-6">
-          <div className="flex items-center gap-2">
-            <span className="badge badge-green mr-1">
-              <Link href={`/blog-03?category=${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
-            </span>
-            <span rel="author" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
-              {blog?.author}
-            </span>
-            <span className="h-[6px] w-[5px] rounded-full bg-[#ECE8FF]"> </span>
-            <time dateTime="2025-03-20" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
-              {blog?.publishDate}
-            </time>
+          <div className="flex items-center gap-2 flex-wrap">
+            {blog?.badges && blog.badges.length > 0 ? (
+              blog.badges.map((badge: any) => (
+                <span key={badge.id} className="badge badge-green">
+                  {badge.badge}
+                </span>
+              ))
+            ) : (
+              <span className="badge badge-green mr-1">
+                <Link href={`/blog-03?category=${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
+              </span>
+            )}
+            {blog?.author && (
+              <>
+                <span rel="author" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
+                  {blog?.author}
+                </span>
+                <span className="h-[6px] w-[5px] rounded-full bg-[#ECE8FF]"> </span>
+              </>
+            )}
+            {blog?.publishDate && (
+              <time dateTime="2025-03-20" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
+                {blog?.publishDate}
+              </time>
+            )}
           </div>
           <div>
             <h3 className="sm:text-heading-5 text-heading-6 mb-2 font-normal">

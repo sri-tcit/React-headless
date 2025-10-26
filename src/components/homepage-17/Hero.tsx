@@ -45,7 +45,30 @@ const clientLogos = [
   },
 ];
 
-const Hero = () => {
+interface HeroBanner {
+  id: string;
+  heading: string;
+  subheading: string;
+  buttontext: string;
+  buttonlink: string | null;
+  bannerImage: {
+    url: string;
+    height: number;
+    width: number;
+  };
+}
+
+interface HeroProps {
+  data?: HeroBanner;
+}
+
+const Hero = ({ data }: HeroProps) => {
+  const imageUrl = process.env.strapi_image_url || '';
+  const heading = data?.heading || 'Apps made for the future!';
+  const subheading = data?.subheading || 'From concept to launch, we design and develop mobile and web apps that drive real results.';
+  const buttonText = data?.buttontext || 'Apply Now';
+  const buttonLink = data?.buttonlink || '/contact-us';
+  const bannerImage = data?.bannerImage ? imageUrl + data.bannerImage.url : heroThumbnail;
   return (
     <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]" aria-label="Hero Section">
       <div className="max-w-[1440px] mx-auto">
@@ -61,11 +84,11 @@ const Hero = () => {
                 <div>
                   <div className="space-y-2 md:space-y-4 mb-6 md:mb-8 text-center md:text-left">
                     <RevealAnimation delay={0.2}>
-                      <h1 className="max-w-full lg:max-w-[507px] dark:text-secondary">Apps made for the future!</h1>
+                      <h1 className="max-w-full lg:max-w-[507px] dark:text-secondary">{heading}</h1>
                     </RevealAnimation>
                     <RevealAnimation delay={0.4}>
                       <p className="md:max-w-[429px] text-secondary/60">
-                        From concept to launch, we design and develop mobile and web apps that drive real results.
+                        {subheading}
                       </p>
                     </RevealAnimation>
                   </div>
@@ -117,17 +140,23 @@ const Hero = () => {
                   <RevealAnimation delay={0.8}>
                     <div className="w-[95%] mx-auto md:mx-0 md:w-full">
                       <LinkButton
-                        href="/contact-us"
+                        href={buttonLink}
                         className="btn btn-white btn-xl hover:btn-secondary w-full dark:btn-black dark:hover:btn-accent md:w-auto"
                         aria-label="Book a free consultation call">
-                        Apply Now
+                        {buttonText}
                       </LinkButton>
                     </div>
                   </RevealAnimation>
                 </div>
                 <RevealAnimation delay={0.9}>
                   <figure className="max-w-[643px] w-full">
-                    <Image src={heroThumbnail} alt="App showcase illustration" className="size-full object-cover" />
+                    <Image 
+                      src={bannerImage} 
+                      alt="App showcase illustration" 
+                      width={data?.bannerImage?.width || 643}
+                      height={data?.bannerImage?.height || 643}
+                      className="size-full object-cover" 
+                    />
                   </figure>
                 </RevealAnimation>
               </div>

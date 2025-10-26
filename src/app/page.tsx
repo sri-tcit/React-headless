@@ -21,7 +21,7 @@ const Homepage01 = async () => {
   try {
     const data = await Client.request(HOME_QUERY);
     home = data?.home;
-    // console.log('Fetched home data:', home);
+    console.log('Fetched home data:', home);
   } catch (err) {
     console.error('GraphQL fetch error:', err);
   }

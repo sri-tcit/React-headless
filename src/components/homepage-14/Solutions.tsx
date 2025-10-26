@@ -48,7 +48,7 @@ const Solutions = ({ data }: { data: any }) => {
             </div>
 
             {/* btn */}
-            <RevealAnimation delay={0.7}>
+            {/* <RevealAnimation delay={0.7}>
               <div className="text-center">
                 <LinkButton
                   href="/career"
@@ -57,7 +57,7 @@ const Solutions = ({ data }: { data: any }) => {
                   Explore all loan types
                 </LinkButton>
               </div>
-            </RevealAnimation>
+            </RevealAnimation> */}
           </div>
         </div>
       </div>

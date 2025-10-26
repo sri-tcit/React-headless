@@ -2,13 +2,33 @@ import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import StackCardItem from '../ui/stack-card/StackCardItem';
 import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
+import Image from 'next/image';
 
 // Interface for service data
 interface ServiceData {
   id: string;
-  icon: string;
+  icon?: string;
   title: string;
   description: string;
+  picture?: {
+    url: string;
+    height: number;
+    width: number;
+  };
+}
+
+interface OffersData {
+  id: string;
+  label: string;
+  heading: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string | null;
+  cards: ServiceData[];
+}
+
+interface WhatWeOfferProps {
+  data?: OffersData;
 }
 
 const servicesData: ServiceData[] = [
@@ -44,7 +64,14 @@ const servicesData: ServiceData[] = [
   },
 ];
 
-const WhatWeOffer = () => {
+const WhatWeOffer = ({ data }: WhatWeOfferProps) => {
+  const imageUrl = process.env.strapi_image_url || '';
+  const label = data?.label || 'What we offer';
+  const heading = data?.heading || 'End-to-end app development services.';
+  const description = data?.description || 'Everything you need to launch, grow, and scale a successful app.';
+  const buttonText = data?.buttonText || 'Explore our services';
+  const buttonLink = data?.buttonLink || '/our-services-01';
+  const cards = data?.cards || servicesData;
   return (
     <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[200px]">
       <RevealAnimation delay={0.1}>
@@ -53,22 +80,22 @@ const WhatWeOffer = () => {
             <div className="flex flex-col md:flex-row items-start gap-y-24 gap-x-[140px]">
               <div className="w-full lg:flex-1 lg:sticky lg:top-28 lg:max-w-full max-w-[520px] lg:mx-0 mx-auto text-center lg:text-left space-y-7 lg:space-y-14">
                 <RevealAnimation delay={0.3}>
-                  <span className="badge badge-primary-light mb-5">What we offer</span>
+                  <span className="badge badge-primary-light mb-5">{label}</span>
                 </RevealAnimation>
                 <div className="space-y-2 md:max-w-[595px]">
                   <RevealAnimation delay={0.4}>
-                    <h2>End-to-end app development services.</h2>
+                    <h2>{heading}</h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.5}>
-                    <p>Everything you need to launch, grow, and scale a successful app.</p>
+                    <p>{description}</p>
                   </RevealAnimation>
                 </div>
                 <RevealAnimation delay={0.6}>
                   <div>
                     <LinkButton
-                      href="/our-services-01"
+                      href={buttonLink}
                       className="btn btn-white btn-lg lg:btn-xl w-[90%] md:w-auto mx-auto md:mx-0 dark:btn-transparent hover:btn-secondary dark:hover:btn-accent">
-                      Explore our services
+                      {buttonText}
                     </LinkButton>
                   </div>
                 </RevealAnimation>
@@ -78,10 +105,22 @@ const WhatWeOffer = () => {
                 gap="24px"
                 initDelay={100}
                 className="w-full lg:flex-1 lg:max-w-full md:max-w-[65%] max-w-[90%] lg:mx-0 mx-auto">
-                {servicesData.map((service) => (
+                {cards.map((service) => (
                   <StackCardItem key={service.id}>
                     <div className="border border-stroke-1/90 dark:border-stroke-5 bg-white dark:bg-background-6 rounded-[20px] space-y-6 p-8 h-full flex flex-col justify-center">
-                      <span className={`block ${service.icon} text-heading-2 text-secondary dark:text-accent`} />
+                      {service.picture ? (
+                        <div className="w-16 h-16">
+                          <Image
+                            src={imageUrl + service.picture.url}
+                            alt={service.title}
+                            width={service.picture.width}
+                            height={service.picture.height}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      ) : (
+                        service.icon && <span className={`block ${service.icon} text-heading-2 text-secondary dark:text-accent`} />
+                      )}
                       <div className="space-y-2">
                         <h3 className="text-heading-5">{service.title}</h3>
                         <p>{service.description}</p>

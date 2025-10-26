@@ -54,6 +54,13 @@ export const ABOUT_QUERY = gql`
         id
         value
       }
+      contactFormFields {
+        id
+        label
+        placeholder
+      }
+      submitBtn
+      termsLabel
     }
     ourMission {
       id
