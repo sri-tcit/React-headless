@@ -21,7 +21,7 @@ const FooterOne = ({ className }: { className?: string }) => {
       {/* <FooterRightGradient /> */}
 
       {/* <!-- left gradient --> */}
-      {/* <FooterLeftGradient /> */} 
+      {/* <FooterLeftGradient /> */}
       <div className="main-container px-5">
         <div className="grid grid-cols-12 justify-between gap-x-0 gap-y-16 pt-16 pb-12 xl:pt-[90px]">
           <div className="col-span-12 xl:col-span-4">
@@ -71,89 +71,20 @@ const FooterOne = ({ className }: { className?: string }) => {
             <div className="col-span-12 md:col-span-4">
               <RevealAnimation delay={0.4}>
                 <div className="space-y-8">
-                  <p className="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Company</p>
                   <ul className="space-y-3 sm:space-y-5">
                     <li>
-                      <Link href="/about-01" className="footer-link-v2">
+                      <Link href="/home" className="footer-link-v2">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/credit-cards" className="footer-link-v2">
+                        Credit Cards
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about" className="footer-link-v2">
                         About Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/career" className="footer-link-v2">
-                        Career
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/case-study" className="footer-link-v2">
-                        Case Studies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/contact-us" className="footer-link-v2">
-                        Contact Us
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </RevealAnimation>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <RevealAnimation delay={0.5}>
-                <div className="space-y-8">
-                  <p className="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Support</p>
-                  <ul className="space-y-3 sm:space-y-5">
-                    <li>
-                      <Link href="/faq" className="footer-link-v2">
-                        FAQ
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/documentation" className="footer-link-v2">
-                        Documentation
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/tutorial" className="footer-link-v2">
-                        Tutorial
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/support" className="footer-link-v2">
-                        Support
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </RevealAnimation>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <RevealAnimation delay={0.6}>
-                <div className="space-y-8">
-                  <p className="sm:text-heading-6 text-tagline-1 text-secondary font-normal">Legal Policies</p>
-                  <ul className="space-y-3 sm:space-y-5">
-                    <li>
-                      <Link href="/terms-conditions" className="footer-link-v2">
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/privacy" className="footer-link-v2">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/refund-policy" className="footer-link-v2">
-                        Refund Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/gdpr" className="footer-link-v2">
-                        GDPR Compliance
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/affiliate-policy" className="footer-link-v2">
-                        Affiliate Policy
                       </Link>
                     </li>
                   </ul>

@@ -8,12 +8,10 @@ interface NavCTAButtonProps {
   className?: string;
 }
 
-const NavCTAButton = ({ btnClassName, href = '/', label, className }: NavCTAButtonProps) => {
+const NavCTAButton = () => {
   return (
-    <div className={cn('hidden items-center justify-center xl:flex', className)}>
-      <LinkButton href={href} className={cn('btn btn-md', btnClassName)}>
-        {label}
-      </LinkButton>
+    <div className={cn('hidden items-center justify-center xl:flex')}>
+     
     </div>
   );
 };
