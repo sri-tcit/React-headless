@@ -169,8 +169,8 @@ const PrivacyContent = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                <span className="text-secondary dark:text-accent">NextSaaS</span> is a product operated by
-                <span className="text-secondary dark:text-accent">NextSaaS Technologies LLC</span>. We specialize in
+                <span className="text-secondary dark:text-accent">Nafa Bank</span> is a product operated by
+                <span className="text-secondary dark:text-accent">Nafa Bank Technologies LLC</span>. We specialize in
                 property management solutions, empowering businesses worldwide to streamline their operations
                 efficiently. We are committed to protecting your privacy and handling your information transparently.
               </p>
@@ -180,7 +180,7 @@ const PrivacyContent = () => {
           {/* Policy Intro */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-2">
-              <h4>NextSaaS privacy policy</h4>
+              <h4>Nafa Bank privacy policy</h4>
               <p>
                 This Privacy Policy describes how your personal information is collected, used, and shared when you
                 visit, subscribe, register, or make a purchase from

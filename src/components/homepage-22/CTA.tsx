@@ -27,7 +27,7 @@ const CTA = ({ badgeClassName = '' }: { badgeClassName?: string }) => {
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <p className="text-accent/60 max-md:px-2">
-                    Join thousands of businesses securing their mobile ecosystems with NextSaaS.
+                    Join thousands of businesses securing their mobile ecosystems with Nafa Bank.
                   </p>
                 </RevealAnimation>
               </div>

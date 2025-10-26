@@ -71,7 +71,7 @@ const MeetOurTeam = () => {
       <div className="main-container">
         <div className="space-y-7 md:space-y-14">
           <h2 ref={titleRef} className="split-text-team-title text-center">
-            From intuitive dashboards to data-driven automation, NextSaaS is built for modern businesses that want to
+            From intuitive dashboards to data-driven automation, Nafa Bank is built for modern businesses that want to
             simplify workflows and scale effortlessly.
           </h2>
 
@@ -80,7 +80,7 @@ const MeetOurTeam = () => {
               <LinkButton
                 href="/our-team-01"
                 className="btn btn-primary btn-md w-[85%] md:w-auto hover:btn-secondary dark:hover:btn-accent">
-                Meet NextSaaS team
+                Meet Nafa Bank team
               </LinkButton>
             </div>
           </RevealAnimation>

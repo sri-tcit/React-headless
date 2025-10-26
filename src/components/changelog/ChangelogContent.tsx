@@ -11,10 +11,10 @@ const ChangelogContent = () => {
         <div className="space-y-[70px] changelog">
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.3}>
-              <h2>NextSaaS changelog</h2>
+              <h2>Nafa Bank changelog</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p>Stay updated with the latest features, improvements, and fixes in NextSaaS.</p>
+              <p>Stay updated with the latest features, improvements, and fixes in Nafa Bank.</p>
             </RevealAnimation>
           </div>
           <div className="space-y-8">
@@ -27,7 +27,7 @@ const ChangelogContent = () => {
                 <div className="-z-100 absolute -right-[105%] -top-[50%] sm:-right-[104%] sm:-top-[95%] md:-right-[88%] md:-top-[98%] lg:-right-[80%] lg:-top-[90%] xl:-right-[78%] xl:-top-[97%] -rotate-[160deg] size-[650px] sm:size-[1060px] pointer-events-none select-none">
                   <Image src={gradient27} alt="gradient" />
                 </div>
-                <h4 className="mb-6">NextSaaS v2.2.0 – released on april 25, 2025</h4>
+                <h4 className="mb-6">Nafa Bank v2.2.0 – released on april 25, 2025</h4>
                 <div className="space-y-8">
                   <div className="space-y-3">
                     <p className="text-secondary dark:text-accent">New:</p>
@@ -63,7 +63,7 @@ const ChangelogContent = () => {
               <div className="-z-10 absolute -right-[100%] -top-[45%] sm:-right-[120%] sm:-top-[95%] md:-right-[94%] md:-top-[98%] lg:-right-[84%] xl:-right-[74%] xl:-top-[92%] -rotate-[260deg] size-[650px] sm:size-[1060px] pointer-events-none select-none">
                 <Image src={gradient6} alt="gradient" />
               </div>
-              <h4 className="mb-6">NextSaaS v2.1.0 – Released on March 10, 2025</h4>
+              <h4 className="mb-6">Nafa Bank v2.1.0 – Released on March 10, 2025</h4>
               <div className="space-y-8">
                 <div className="space-y-3">
                   <p className="text-secondary dark:text-accent">New:</p>
@@ -95,13 +95,13 @@ const ChangelogContent = () => {
               <div className="-z-10 absolute -right-[85%] -top-[38%] sm:-right-[92%] sm:-top-[78%] md:-right-[80%] md:-top-[84%] lg:-right-[66%] lg:-top-[80%] xl:-right-[68%] xl:-top-[84%] rotate-[260deg] size-[650px] sm:size-[1060px] pointer-events-none select-none">
                 <Image src={gradient6} alt="gradient" />
               </div>
-              <h4 className="mb-6">NextSaaS v2.0.0 – major update – released on february 1, 2025</h4>
+              <h4 className="mb-6">Nafa Bank v2.0.0 – major update – released on february 1, 2025</h4>
               <div className="space-y-8">
                 <div className="space-y-3">
                   <p className="text-secondary dark:text-accent">New:</p>
                   <ul className="space-y-3 list-disc list-inside text-tagline-1 font-normal text-secondary/60 dark:text-accent/60">
                     <li>Full platform UI redesign</li>
-                    <li>Launch of NextSaaS Mobile App (iOS and Android)</li>
+                    <li>Launch of Nafa Bank Mobile App (iOS and Android)</li>
                     <li>Added multi-user collaboration tools</li>
                     <li>Advanced reporting templates for premium plans</li>
                   </ul>
@@ -131,7 +131,7 @@ const ChangelogContent = () => {
                 aria-hidden="true">
                 <Image src={gradient16} alt="gradient" />
               </div>
-              <h4 className="mb-6">NextSaaS v1.5.0 – Released on December 15, 2024</h4>
+              <h4 className="mb-6">Nafa Bank v1.5.0 – Released on December 15, 2024</h4>
               <div className="space-y-8">
                 <div className="space-y-3">
                   <p className="text-secondary dark:text-accent">New:</p>
@@ -161,7 +161,7 @@ const ChangelogContent = () => {
           <RevealAnimation delay={1}>
             <div className="space-y-6 relative overflow-hidden z-10 max-w-[850px] mx-auto">
               <div className="space-y-3">
-                <h4>NextSaaS v1.0.0 – Initial Release – October 1, 2024</h4>
+                <h4>Nafa Bank v1.0.0 – Initial Release – October 1, 2024</h4>
                 <p>First Official Launch</p>
               </div>
               <ul className="space-y-3 text-tagline-1 font-normal text-secondary/60 dark:text-accent/60">

@@ -30,7 +30,7 @@ const Hero = () => {
 
             <RevealAnimation delay={0.3}>
               <p className="mb-10 md:mb-14 lg:max-w-[440px] xl:max-w-[570px]">
-                Empower your business with NextSaaS—your all-in-one cloud-based software designed for performance,
+                Empower your business with Nafa Bank—your all-in-one cloud-based software designed for performance,
                 automation, and growth.
               </p>
             </RevealAnimation>

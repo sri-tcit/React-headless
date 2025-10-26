@@ -16,7 +16,7 @@ const VisionStatement = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <p>
-              At NextSaaS, we believe software should empower people, not overwhelm them. That&apos;s why we&apos;ve
+              At Nafa Bank, we believe software should empower people, not overwhelm them. That&apos;s why we&apos;ve
               created a flexible, intuitive platform that helps teams streamline operations, gain clarity from data, and
               scale faster, without the complexity.
             </p>

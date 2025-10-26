@@ -13,7 +13,7 @@ const CTA = () => {
           <CTAV3
             badgeClass="badge-green mb-5"
             badgeText="Get started"
-            ctaHeading=" NextSaaS – your ultimate email &amp; transactional messaging platform"
+            ctaHeading=" Nafa Bank – your ultimate email &amp; transactional messaging platform"
             ctaHeadingClass="text-secondary dark:text-accent max-w-[1042px] mx-auto"
             description="Drive more engagement. improve deliverability. automate your emails."
             descriptionClass="max-w-[600px] mx-auto"

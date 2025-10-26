@@ -13,8 +13,8 @@ import { projectAchievements } from '@/data/achievements';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AboutPage-01 - NextSaaS',
-  description: 'About Page - NextSaaS',
+  title: 'AboutPage-01 - Nafa Bank',
+  description: 'About Page - Nafa Bank',
 };
 
 const AboutPage01 = () => {

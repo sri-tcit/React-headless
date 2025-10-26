@@ -78,12 +78,12 @@ export default function CRMFeaturesSection() {
 
             <div className="space-y-3">
               <RevealAnimation delay={0.2}>
-                <h2>Key features of NextSaaS CRM</h2>
+                <h2>Key features of Nafa Bank CRM</h2>
               </RevealAnimation>
 
               <RevealAnimation delay={0.3}>
                 <p className="text-secondar dark:text-accent">
-                  NextSaaS CRM is designed to simplify and supercharge your customer relationship management. With a
+                  Nafa Bank CRM is designed to simplify and supercharge your customer relationship management. With a
                   clean, user-friendly interface and powerful automation tools
                 </p>
               </RevealAnimation>

@@ -8,8 +8,8 @@ import Integration from '@/components/testimonial-01/Integration';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Testimonial Page-01 - NextSaaS',
-  description: 'Testimonial Page-01 - NextSaaS',
+  title: 'Testimonial Page-01 - Nafa Bank',
+  description: 'Testimonial Page-01 - Nafa Bank',
 };
 
 const TestimonialOnePage = () => {

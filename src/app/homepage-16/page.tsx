@@ -12,8 +12,8 @@ import ReviewsV3 from '@/components/shared/reviews/ReviewsV3';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'App Builder - NextSaaS',
-  description: 'App Services of NextSaaS',
+  title: 'App Builder - Nafa Bank',
+  description: 'App Services of Nafa Bank',
 };
 const HomePage16 = () => {
   return (

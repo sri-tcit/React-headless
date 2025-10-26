@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Features 02 - NextSaaS',
+  title: 'Features 02 - Nafa Bank',
 };
 
 const Features02 = () => {

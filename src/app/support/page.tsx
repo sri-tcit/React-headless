@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Support - NextSaaS',
+  title: 'Support - Nafa Bank',
 };
 
 const Support = () => {
@@ -28,7 +28,7 @@ const Support = () => {
           className="dark:bg-background-5 bg-white"
           badgeClass="badge-green"
           badgeText="Get Started"
-          ctaHeading="Ready to start earning with NextSaaS?"
+          ctaHeading="Ready to start earning with Nafa Bank?"
           description="If you have any questions, feel free to reach out to our team."
           btnClass="hover:btn-secondary dark:hover:btn-accent"
           ctaBtnText="Get started"

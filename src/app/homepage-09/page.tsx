@@ -13,8 +13,8 @@ import { projectAchievements } from '@/data/achievements';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cloud Based Software - NextSaaS',
-  description: 'Cloud Based Software of NextSaaS',
+  title: 'Cloud Based Software - Nafa Bank',
+  description: 'Cloud Based Software of Nafa Bank',
 };
 const HomePage09 = () => {
   return (
@@ -40,9 +40,9 @@ const HomePage09 = () => {
           className="py-[50px] md:py-20 lg:py-28 dark:bg-background-6 bg-secondary"
           badgeClass="badge badge-blur"
           badgeText="Get started"
-          ctaHeading="Ready to start earning with NextSaaS?"
+          ctaHeading="Ready to start earning with Nafa Bank?"
           headingClass="text-accent text-heading-5 lg:text-heading-2"
-          description="Start your free trial today and experience the power of NextSaaS—where efficiency meets innovation."
+          description="Start your free trial today and experience the power of Nafa Bank—where efficiency meets innovation."
           descriptionClass="text-accent/60 max-w-[534px] mx-auto xl:mx-0"
           ctaBtnText="Get started"
           inputFieldClass="px-[18px]  border-0 shadow-1 h-12 py-3 dark:text-accent placeholder:text-accent/40 rounded-full lg:max-w-[340px] md:w-[71%] w-[85%] dark:border-stroke-7 dark:placeholder:text-accent/60 focus:outline-1 focus:outline-primary-600 dark:focus:outline-primary-400 bg-accent/5 text-accent font-normal placeholder:font-normal"

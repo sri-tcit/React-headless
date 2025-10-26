@@ -7,8 +7,8 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - NextSaaS',
-  description: 'Contact Us Page - NextSaaS',
+  title: 'Contact Us - Nafa Bank',
+  description: 'Contact Us Page - Nafa Bank',
 };
 
 const ContactUs = () => {

@@ -31,8 +31,8 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
             <RevealAnimation delay={0.3}>
               <div className="xl:max-w-[306px]">
                 <figure>
-                  <Image src={LightLogo} className="dark:hidden" alt="NextSass" />
-                  <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" />
+                  <Image src={LightLogo} className="dark:hidden" alt="Nafa Bank" />
+                  <Image src={DarkLogo} className="hidden dark:block" alt="Nafa Bank" />
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
                   Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
@@ -280,7 +280,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
           <FooterDivider className="bg-stroke-2 dark:bg-accent/5" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-secondary dark:text-accent/60">
-              Copyright &copy;NextSaaS – smart application for modern business
+              Copyright &copy;Nafa Bank – smart application for modern business
             </p>
           </RevealAnimation>
         </div>

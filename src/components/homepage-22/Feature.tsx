@@ -56,7 +56,7 @@ const Feature = () => {
           </RevealAnimation>
           <div className="space-y-3 md:mb-[70px] mb-14">
             <RevealAnimation delay={0.2}>
-              <h2>Why teams love NextSaaS</h2>
+              <h2>Why teams love Nafa Bank</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>Manage your entire mobile infrastructure from one platform</p>

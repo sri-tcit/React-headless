@@ -8,8 +8,8 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Case Study - NextSaaS',
-  description: 'Case Study - NextSaaS',
+  title: 'Case Study - Nafa Bank',
+  description: 'Case Study - Nafa Bank',
 };
 
 const CaseStudyPage = () => {

@@ -8,8 +8,8 @@ import TestimonialMarquee from '@/components/testimonial-02/TestimonialMarquee';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Testimonial Page-02 - NextSaaS',
-  description: 'Testimonial Page-02 - NextSaaS',
+  title: 'Testimonial Page-02 - Nafa Bank',
+  description: 'Testimonial Page-02 - Nafa Bank',
 };
 
 const TestimonialTwoPage = () => {

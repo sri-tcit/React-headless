@@ -60,7 +60,7 @@ const WhyUs = () => {
           <div className="space-y-[70px] relative z-10">
             <div className="md:w-full space-y-3">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-green-v2 mb-5">&nbsp;Why choose NextSaaS?</span>
+                <span className="badge badge-green-v2 mb-5">&nbsp;Why choose Nafa Bank?</span>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <h2 id="features-heading" className="max-w-[571px]">

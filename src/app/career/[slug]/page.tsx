@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: 'Apply Now - NextSaaS',
+  title: 'Apply Now - Nafa Bank',
 };
 
 const CareerDetails = async ({ params }: { params: Promise<{ slug: string }> }) => {

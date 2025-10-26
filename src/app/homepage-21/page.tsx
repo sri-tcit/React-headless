@@ -12,8 +12,8 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Personal Finance - NextSaaS',
-  description: 'Personal Finance of NextSaaS',
+  title: 'Personal Finance - Nafa Bank',
+  description: 'Personal Finance of Nafa Bank',
 };
 const HomePage21 = () => {
   return (

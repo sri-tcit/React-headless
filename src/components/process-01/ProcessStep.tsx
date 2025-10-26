@@ -67,7 +67,7 @@ const ProcessStep = () => {
           <RevealAnimation delay={0.4}>
             <p className="max-w-[692px] mx-auto">
               We make it easy to Get started, simple to scale, and seamless to succeed. Whether you&apos;re using one
-              feature or the full suite, NextSaaS is built to support you every step of the way.
+              feature or the full suite, Nafa Bank is built to support you every step of the way.
             </p>
           </RevealAnimation>
         </div>

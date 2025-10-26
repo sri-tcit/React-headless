@@ -12,7 +12,7 @@ import { Client } from '@/graphql/client';
 import { ABOUT_QUERY } from '@/graphql/queries/about';
 
 export const metadata: Metadata = {
-  title: 'About - NextSaaS',
+  title: 'About - Nafa Bank',
 };
 
 const AboutPage = async() => {
@@ -25,7 +25,7 @@ const AboutPage = async() => {
       console.error('GraphQL fetch error:', err);
     }
     
-    const { aboutTitle, aboutCTA, passionSection, steps, ourMission , contactSection } = about;
+    const { aboutTitle, ctaSection, passionSection, steps, ourMission , contactSection } = about;
 
 
   return (
@@ -48,7 +48,7 @@ const AboutPage = async() => {
       {steps && <Process data={steps} />}
       {contactSection && <ContactUs data={contactSection} />}
       {
-        aboutCTA && <CTA20 data={aboutCTA} />
+        ctaSection && <CTA20 data={ctaSection} />
       }
 
       <FooterOne />

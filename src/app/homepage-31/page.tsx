@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Time Tracking Software - NextSaaS',
+  title: 'Time Tracking Software - Nafa Bank',
 };
 
 const Homepage31 = () => {
@@ -37,7 +37,7 @@ const Homepage31 = () => {
           badgeText="Get started"
           badgeClass="!badge-green"
           ctaHeading="Start tracking smarter today"
-          description="Start your free trial today and experience the power of NextSaaS—where efficiency meets innovation."
+          description="Start your free trial today and experience the power of Nafa Bank—where efficiency meets innovation."
           descriptionClass="text-secondary/60"
           btnClass="btn-green hover:btn-white-dark"
           ctaBtnText="Get started"

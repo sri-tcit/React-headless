@@ -26,7 +26,7 @@ const whyChooseFeatures = [
     id: 4,
     icon: 'ns-shape-25',
     title: 'Built to empower',
-    description: 'NextSaaS simplifies the complex.',
+    description: 'Nafa Bank simplifies the complex.',
   },
 ];
 

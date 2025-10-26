@@ -20,7 +20,7 @@ const Testimonial = () => {
           <RevealAnimation delay={0.3}>
             <p className="max-w-[872px] mx-auto">
               Trusted by businesses worldwide to drive efficiency, accuracy, and results. Hear from our clients how
-              NextSaaS helped them streamline operations, save time, and drive results through smart automation.
+              Nafa Bank helped them streamline operations, save time, and drive results through smart automation.
             </p>
           </RevealAnimation>
         </div>

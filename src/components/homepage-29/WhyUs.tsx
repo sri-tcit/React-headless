@@ -12,11 +12,11 @@ const WhyUs = () => {
         <div className="text-center space-y-5 max-w-[620px] mx-auto mb-[70px]">
           <div className="space-y-3">
             <RevealAnimation delay={0.1}>
-              <h2>Why choose NextSaaS?</h2>
+              <h2>Why choose Nafa Bank?</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                At NextSaaS, we combine innovation, reliability, and user-centric design to deliver powerful solutions
+                At Nafa Bank, we combine innovation, reliability, and user-centric design to deliver powerful solutions
                 that scale.
               </p>
             </RevealAnimation>

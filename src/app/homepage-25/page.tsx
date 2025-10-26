@@ -13,8 +13,8 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Property Management software - NextSaaS',
-  description: 'Property Management software of NextSaaS',
+  title: 'Property Management software - Nafa Bank',
+  description: 'Property Management software of Nafa Bank',
 };
 const HomePage25 = () => {
   return (

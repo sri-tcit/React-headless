@@ -21,7 +21,7 @@ const Invitation = () => {
                 <div className="md:mb-14 sm:mb-10 mb-6 md:max-w-[420px] max-w-[340px] sm:mx-0 mx-auto sm:text-left text-center">
                   <RevealAnimation delay={0.1}>
                     <h5 className="md:mb-7 sm:mb-5 mb-3 lg:text-heading-5 md:text-heading-6 text-tagline-1">
-                      Join thousands of people who trust NextSaaS to protect what matters most—affordably and
+                      Join thousands of people who trust Nafa Bank to protect what matters most—affordably and
                       efficiently.
                     </h5>
                   </RevealAnimation>

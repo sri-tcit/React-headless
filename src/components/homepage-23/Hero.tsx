@@ -29,7 +29,7 @@ const Hero = () => {
                   </RevealAnimation>
                   <RevealAnimation delay={0.2}>
                     <p className="max-w-[600px] xl:max-w-[804px] mx-auto text-center md:w-full">
-                      At NextSaaS, we help you invest confidently—offering tools that align with your goals, minimize
+                      At Nafa Bank, we help you invest confidently—offering tools that align with your goals, minimize
                       risk, and maximize long-term growth. Whether saving for retirement or growing your portfolio,
                       we&apos;ve got you covered.
                     </p>

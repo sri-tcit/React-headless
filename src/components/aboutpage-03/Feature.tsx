@@ -24,7 +24,7 @@ const Feature = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <p className="lg:max-w-[904px] mx-auto">
-              At NextSaaS, we create tools that simplify your work, scale with your growth, and bring clarity to
+              At Nafa Bank, we create tools that simplify your work, scale with your growth, and bring clarity to
               complexity. From streamlining operations to unlocking insights, our platform is built to support your
               entire journey—from startup to enterprise.
             </p>

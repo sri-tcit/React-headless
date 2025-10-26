@@ -74,7 +74,7 @@ const Features = () => {
             <span className="badge badge-green mb-3.5 md:mb-5">More features</span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <h2>Features that set NextSaaS apart</h2>
+            <h2>Features that set Nafa Bank apart</h2>
           </RevealAnimation>
         </div>
         <div className="grid grid-cols-12 items-center gap-y-12 sm:gap-x-8">

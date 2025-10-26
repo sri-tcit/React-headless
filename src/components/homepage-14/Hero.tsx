@@ -27,7 +27,7 @@ const Hero = () => {
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="max-w-[719px] md:w-full mx-auto mb-14">
-                  Take the hassle out of home financing. With NextSaaS, you get personalized mortgage plans, expert
+                  Take the hassle out of home financing. With Nafa Bank, you get personalized mortgage plans, expert
                   support every step of the way, and lightning-fast approval.
                 </p>
               </RevealAnimation>

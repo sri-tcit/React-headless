@@ -7,7 +7,7 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog page 01 - NextSaaS',
+  title: 'Blog page 01 - Nafa Bank',
 };
 
 const BlogPage01 = () => {

@@ -50,7 +50,7 @@ const WhyChooseUsV2 = () => {
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <p className="max-w-[536px]">
-                    NextSaaS helps businesses manage customer relationships, automate workflows, and close deals
+                    Nafa Bank helps businesses manage customer relationships, automate workflows, and close deals
                     faster—all in one seamless platform.
                   </p>
                 </RevealAnimation>

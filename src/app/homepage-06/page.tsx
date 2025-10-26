@@ -11,9 +11,9 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Financial Application - NextSaaS',
+  title: 'Financial Application - Nafa Bank',
   description:
-    'Discover NextSaaS, a comprehensive financial application designed to streamline your business finances, enhance productivity, and drive growth.',
+    'Discover Nafa Bank, a comprehensive financial application designed to streamline your business finances, enhance productivity, and drive growth.',
 };
 
 const HomePage06 = () => {

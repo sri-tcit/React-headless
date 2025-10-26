@@ -1,4 +1,4 @@
-# NextSaaS - Modern SaaS Template Collection 
+# Nafa Bank - Modern SaaS Template Collection 
 
 A comprehensive, modern Next.js 15 SaaS template collection with 20+ homepage variations and complete inner pages. Built with React 19, TypeScript, Tailwind CSS 4, and cutting-edge web technologies for SaaS businesses, startups, and web applications.
 
@@ -228,7 +228,7 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Portfolio - NextSaaS',
+  title: 'Portfolio - Nafa Bank',
   description: 'Showcase of our amazing projects and work',
 };
 

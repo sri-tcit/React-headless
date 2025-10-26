@@ -5,7 +5,6 @@ query CardsListing {
   cardsListing {
     documentId
     ctaSection {
-      id
       label
       title
       description

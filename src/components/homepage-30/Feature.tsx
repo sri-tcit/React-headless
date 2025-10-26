@@ -13,7 +13,7 @@ const Feature = () => {
           <div className="space-y-5 mb-14">
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <h2 className="max-w-[465px]">NextSaaS your smart email choice</h2>
+                <h2 className="max-w-[465px]">Nafa Bank your smart email choice</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p className="max-w-[508px]">

@@ -10,11 +10,11 @@ const LogoV2 = () => {
       <Link href="/">
         <span className="sr-only">Home</span>
         <figure className="hidden lg:block lg:max-w-[198px]">
-          <Image src={darkLogo} alt="NextSaaS" />
+          <Image src={darkLogo} alt="Nafa Bank" />
         </figure>
         <figure className="block max-w-[44px] lg:hidden">
-          <Image src={logo} alt="NextSaaS" className="block w-full dark:hidden" />
-          <Image src={logoDark} alt="NextSaaS" className="hidden w-full dark:block" />
+          <Image src={logo} alt="Nafa Bank" className="block w-full dark:hidden" />
+          <Image src={logoDark} alt="Nafa Bank" className="hidden w-full dark:block" />
         </figure>
       </Link>
     </div>

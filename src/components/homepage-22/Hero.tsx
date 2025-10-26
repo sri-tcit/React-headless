@@ -31,7 +31,7 @@ const Hero = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="lg:max-w-[818px] md:max-w-[618px] sm:max-w-[518px] max-w-[450px] w-full mx-auto">
-                NextSaaS empowers organizations to manage their mobile fleet with confidence. From security policies to
+                Nafa Bank empowers organizations to manage their mobile fleet with confidence. From security policies to
                 remote configurations—manage every device without touching it.
               </p>
             </RevealAnimation>
@@ -54,7 +54,7 @@ const Hero = () => {
                 <LinkButton
                   href="/case-study"
                   className="btn btn-primary btn-md md:btn-xl hover:btn-secondary dark:hover:btn-accent md:w-auto w-[90%]"
-                  aria-label="Get started with NextSaaS">
+                  aria-label="Get started with Nafa Bank">
                   Take a product tour
                 </LinkButton>
               </li>
@@ -64,7 +64,7 @@ const Hero = () => {
                 <LinkButton
                   href="/contact-us"
                   className="btn btn-secondary btn-md md:btn-xl hover:btn-primary dark:btn-accent md:w-auto w-[90%]"
-                  aria-label="Get started with NextSaaS">
+                  aria-label="Get started with Nafa Bank">
                   Start free trial
                 </LinkButton>
               </li>
@@ -77,7 +77,7 @@ const Hero = () => {
           <figure className="w-full rounded-xl md:rounded-[20px] overflow-hidden xl:-mb-7 md:-mb-6 min-[500px]:mb-10">
             <Image
               src={HeroImage}
-              alt="NextSaaS mobile device management software"
+              alt="Nafa Bank mobile device management software"
               className="w-full h-full object-cover"
             />
           </figure>
@@ -88,7 +88,7 @@ const Hero = () => {
           <figure className="w-full rounded-xl md:rounded-[20px] overflow-hidden xl:-mb-7 md:-mb-6 min-[500px]:-mb-10">
             <Image
               src={HeroImageDark}
-              alt="NextSaaS mobile device management software"
+              alt="Nafa Bank mobile device management software"
               className="w-full h-full object-cover"
             />
           </figure>

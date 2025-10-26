@@ -18,7 +18,7 @@ const FeaturesV2 = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="max-w-[658px] mx-auto">
-                NextSaaS helps property managers and real estate professionals boost efficiency, improve customer
+                Nafa Bank helps property managers and real estate professionals boost efficiency, improve customer
                 satisfaction, and increase profitability.
               </p>
             </RevealAnimation>

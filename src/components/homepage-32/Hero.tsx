@@ -20,7 +20,7 @@ const Hero = () => {
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="md:max-w-[818px] sm:max-w-[600px] max-w-[450px] mx-auto">
-                  NextSaaS helps businesses of all sizes visualize, understand, and share data with stunning dashboards,
+                  Nafa Bank helps businesses of all sizes visualize, understand, and share data with stunning dashboards,
                   real-time reports, and powerful analytics—without complex setup or code.
                 </p>
               </RevealAnimation>
@@ -83,7 +83,7 @@ const Hero = () => {
               <RevealAnimation delay={1.0} direction="right">
                 <div className="sm:text-left text-center">
                   <p className="text-tagline-2 font-medium text-secondary dark:text-accent">Join 36,000+</p>
-                  <p className="text-tagline-3">Use NextSaaS for smarter decisions.</p>
+                  <p className="text-tagline-3">Use Nafa Bank for smarter decisions.</p>
                 </div>
               </RevealAnimation>
             </div>

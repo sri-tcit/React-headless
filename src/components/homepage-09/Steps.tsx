@@ -10,7 +10,7 @@ const steps = [
   {
     id: 2,
     title: 'Customize your setup',
-    description: 'Customize NextSaaS to perfectly align with the unique requirements of your business.',
+    description: 'Customize Nafa Bank to perfectly align with the unique requirements of your business.',
   },
   {
     id: 3,

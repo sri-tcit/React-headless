@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Pos System - NextSaaS',
+  title: 'Pos System - Nafa Bank',
 };
 
 const Homepage26 = () => {
@@ -32,7 +32,7 @@ const Homepage26 = () => {
           badgeText="Get started"
           className="bg-white dark:bg-background-6"
           ctaHeading="Start messaging smarter today"
-          description="Start your free trial today and experience the power of NextSaaS—where efficiency meets innovation."
+          description="Start your free trial today and experience the power of Nafa Bank—where efficiency meets innovation."
           descriptionClass="text-secondary/60 dark:text-accent/60 max-w-[530px]"
           btnClass="btn-primary hover:btn-secondary dark:btn-accent dark:hover:btn-primary"
           ctaBtnText="Get started"

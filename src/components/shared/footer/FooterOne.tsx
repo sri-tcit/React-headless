@@ -28,7 +28,7 @@ const FooterOne = ({ className }: { className?: string }) => {
             <RevealAnimation delay={0.3}>
               <div className="max-w-[306px]">
                 <figure>
-                  <Image src={mainLogo} alt="NextSass Logo" />
+                  <Image src={mainLogo} alt="Nafa Bank Logo" />
                 </figure>
                 <p className="text-secondary/70 text-tagline-1 mt-4 mb-7 font-normal">
                   Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
@@ -97,7 +97,7 @@ const FooterOne = ({ className }: { className?: string }) => {
           <FooterDivider />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-tagline-1 text-secondary/70 font-normal">
-              Copyright &copy;NextSaaS – smart application for modern business
+              Copyright &copy;Nafa Bank – smart application for modern business
             </p>
           </RevealAnimation>
         </div>

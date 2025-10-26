@@ -11,8 +11,8 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI Chatbot - NextSaaS',
-  description: 'Homepage Three of NextSaaS',
+  title: 'AI Chatbot - Nafa Bank',
+  description: 'Homepage Three of Nafa Bank',
 };
 
 const HomePage03 = () => {

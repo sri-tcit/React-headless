@@ -42,7 +42,7 @@ const Services = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="md:max-w-[600px] sm:max-w-[450px] max-w-[390px] mx-auto">
-                NextSaaS offers a smarter approach to managing your digital assets by providing intuitive tools and
+                Nafa Bank offers a smarter approach to managing your digital assets by providing intuitive tools and
                 expert guidance tailored to your needs.
               </p>
             </RevealAnimation>

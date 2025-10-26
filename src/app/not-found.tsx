@@ -8,7 +8,7 @@ import { Fragment } from 'react';
 import gradient6 from '../../public/images/gradient/gradient-6.png';
 
 export const metadata: Metadata = {
-  title: '404 - NextSaaS',
+  title: '404 - Nafa Bank',
 };
 
 const NotFound = () => {

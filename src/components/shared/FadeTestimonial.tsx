@@ -15,21 +15,21 @@ export const slides = [
     name: 'John Doe',
     position: 'Risk Manager, Insurance Group',
     image: '/images/avatar/avatar-6.png',
-    text: 'NextSaaS gave us the clarity and control we needed to proactively manage risk. Their platform is intuitive and powerful.',
+    text: 'Nafa Bank gave us the clarity and control we needed to proactively manage risk. Their platform is intuitive and powerful.',
   },
   {
     id: 2,
     name: 'Michael Anderson',
     position: 'CTO, Tech Solutions Inc',
     image: '/images/avatar/avatar-1.png',
-    text: 'With NextSaaS, we reduced compliance headaches and improved our audit readiness. The support team is fantastic!',
+    text: 'With Nafa Bank, we reduced compliance headaches and improved our audit readiness. The support team is fantastic!',
   },
   {
     id: 3,
     name: 'John Smith',
     position: 'Chief Risk Officer, FinEdge',
     image: '/images/avatar/avatar-2.png',
-    text: 'We now have a single source of truth for risk data. NextSaaS made collaboration between departments effortless.',
+    text: 'We now have a single source of truth for risk data. Nafa Bank made collaboration between departments effortless.',
   },
 ];
 

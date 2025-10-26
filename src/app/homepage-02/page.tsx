@@ -12,8 +12,8 @@ import { ModalProvider } from '@/context/ModalContext';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI Software - NextSaaS',
-  description: 'Homepage Two of NextSaaS',
+  title: 'AI Software - Nafa Bank',
+  description: 'Homepage Two of Nafa Bank',
 };
 
 const HomePage02 = () => {

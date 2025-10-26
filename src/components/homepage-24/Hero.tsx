@@ -23,7 +23,7 @@ const Hero = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="xl:max-w-[850px] lg:max-w-[650px] md:max-w-[500px] sm:max-w-[500px] max-w-[450px] mb-7 md:mb-14">
-                At NextSaaS, we help individuals and families secure financial protection with smart, personalized
+                At Nafa Bank, we help individuals and families secure financial protection with smart, personalized
                 insurance coverage—fast, simple, and built around your life.
               </p>
             </RevealAnimation>

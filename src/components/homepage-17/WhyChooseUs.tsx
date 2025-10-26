@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
                   </RevealAnimation>
                   <div className="bg-background-1 dark:bg-background-6 py-8 lg:py-[42px] px-7 lg:px-14 space-y-14 h-full flex flex-col justify-between text-center lg:text-left items-center lg:items-start">
                     <div className="">
-                      <span className="badge badge-primary-light mb-5"> Why choose NextSaaS? </span>
+                      <span className="badge badge-primary-light mb-5"> Why choose Nafa Bank? </span>
                       <h2 className="max-w-[564px]">More than developers We&apos;re your tech Partners</h2>
                     </div>
                     <div>

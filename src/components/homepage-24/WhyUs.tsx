@@ -35,7 +35,7 @@ const WhyUs = () => {
             <div className="space-y-4 md:space-y-8">
               <div className="sm:space-y-3 space-y-1.5">
                 <RevealAnimation delay={0.1}>
-                  <h2 className="text-white">Why Choose NextSaaS?</h2>
+                  <h2 className="text-white">Why Choose Nafa Bank?</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
                   <p className="text-accent/60">Track key indicators, spot trends early, and turn data into action.</p>

@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Process 02 - NextSaaS',
+  title: 'Process 02 - Nafa Bank',
 };
 
 const Process02 = () => {

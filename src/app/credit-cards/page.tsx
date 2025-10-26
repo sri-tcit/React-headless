@@ -23,7 +23,7 @@ import { CARDLIST_QUERY } from '@/graphql/queries/cardList';
 const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
 
 export const metadata: Metadata = {
-  title: 'Credit Cards - NextSaaS',
+  title: 'Credit Cards - Nafa Bank',
 };
 
 const CreditCardsPage = async() => {

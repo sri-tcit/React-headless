@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Data Visualization Software - NextSaaS',
+  title: 'Data Visualization Software - Nafa Bank',
 };
 
 const Homepage32 = () => {

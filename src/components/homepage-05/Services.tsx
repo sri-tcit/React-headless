@@ -22,7 +22,7 @@ const Services = () => {
             </RevealAnimation>
             <div className="space-y-3">
               <RevealAnimation delay={0.2}>
-                <h2>Leading companies around the globe rely on NextSaaS.</h2>
+                <h2>Leading companies around the globe rely on Nafa Bank.</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="mx-auto max-w-[582px] sm:w-full">

@@ -13,8 +13,8 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Analytics - NextSaaS',
-  description: 'Homepage Two of NextSaaS',
+  title: 'Analytics - Nafa Bank',
+  description: 'Homepage Two of Nafa Bank',
 };
 
 const HomePage02 = () => {

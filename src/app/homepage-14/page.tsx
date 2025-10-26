@@ -12,8 +12,8 @@ import ReviewsV3 from '@/components/shared/reviews/ReviewsV3';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mortgage Services - NextSaaS',
-  description: 'Mortgage Services of NextSaaS',
+  title: 'Mortgage Services - Nafa Bank',
+  description: 'Mortgage Services of Nafa Bank',
 };
 const HomePage14 = () => {
   return (

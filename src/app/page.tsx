@@ -12,7 +12,7 @@ import { Client } from '@/graphql/client';
 import { HOME_QUERY } from '@/graphql/queries/home';
 
 export const metadata: Metadata = {
-  title: 'Crypto - NextSaaS',
+  title: 'Nafa Bank',
 };
 
 const Homepage01 = async () => {

@@ -14,8 +14,8 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: 'Case Study Details - NextSaaS',
-  description: 'Case Study Details - NextSaaS',
+  title: 'Case Study Details - Nafa Bank',
+  description: 'Case Study Details - Nafa Bank',
 };
 
 interface CaseStudyDetailsPageProps {

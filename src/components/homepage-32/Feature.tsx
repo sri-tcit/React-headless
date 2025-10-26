@@ -15,7 +15,7 @@ const Feature = () => {
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
                   <p>
-                    &nbsp;Whether you&apos;re a startup or an enterprise, NextSaaS connects with your favorite data
+                    &nbsp;Whether you&apos;re a startup or an enterprise, Nafa Bank connects with your favorite data
                     sources to unify everything into one visual command center.
                   </p>
                 </RevealAnimation>

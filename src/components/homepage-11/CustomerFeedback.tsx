@@ -95,7 +95,7 @@ const CustomerFeedback = () => {
             {/* Testimonial Quote */}
             <RevealAnimation delay={0.4}>
               <blockquote className="text-lg lg:text-heading-6 font-normal max-w-[578px] mx-auto mt-6 lg:mt-10 text-white px-4 sm:px-0">
-                &ldquo;Since switching to NextSaaS, our email deliverability has improved by 40%, and engagement is at
+                &ldquo;Since switching to Nafa Bank, our email deliverability has improved by 40%, and engagement is at
                 an all-time high.&rdquo;
               </blockquote>
             </RevealAnimation>

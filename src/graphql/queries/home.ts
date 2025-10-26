@@ -69,7 +69,6 @@ export const HOME_QUERY = gql`
         buttonLink
         buttonText
         description
-        id
         label
         leftImage {
           url

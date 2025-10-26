@@ -51,7 +51,7 @@ const FeatureV2 = () => {
         <div className="md:py-14 sm:py-10 py-8 md:px-[42px] sm:px-8 px-5 rounded-4xl bg-white dark:bg-background-8 space-y-[70px] relative overflow-hidden">
           <RevealAnimation delay={0.3} direction="up" offset={100}>
             <figure className="absolute -top-[15%] pointer-events-none lg:-top-[30%] xl:-top-[27%] -right-[72%] min-[470px]:-right-[60%] sm:-right-[40%] lg:-right-[24%] xl:-right-[21%] blur-[4px] rotate-[103deg] max-w-[420px] max-h-[480px] select-none">
-              <Image src={gradient6} className="w-full h-full object-cover" alt="NextSass" />
+              <Image src={gradient6} className="w-full h-full object-cover" alt="Nafa Bank" />
             </figure>
           </RevealAnimation>
           <div className="sm:space-y-7 space-y-4 sm:text-left text-center">

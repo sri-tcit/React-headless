@@ -19,7 +19,7 @@ const Features = () => {
                 </RevealAnimation>
                 <RevealAnimation delay={0.2}>
                   <p className="xl:max-w-full max-w-[500px] mx-auto lg:mx-0">
-                    At NextSaaS, We leverage AI and strategic insight to enhance business performance. Partner with us
+                    At Nafa Bank, We leverage AI and strategic insight to enhance business performance. Partner with us
                     to unlock your potential.
                   </p>
                 </RevealAnimation>

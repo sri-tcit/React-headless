@@ -20,7 +20,7 @@ const Projects = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[680px] mx-auto">
-                Discover how NextSaaS is transforming businesses with tailored automation strategies. Explore our
+                Discover how Nafa Bank is transforming businesses with tailored automation strategies. Explore our
                 portfolio to see the real-world impact we&apos;ve made for clients across various industries.
               </p>
             </RevealAnimation>

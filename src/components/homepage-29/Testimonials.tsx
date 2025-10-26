@@ -26,7 +26,7 @@ const testimonialReviews: TestimonialReview[] = [
     name: 'Lana Stone',
     position: '@lana_stone',
     image: avatar6,
-    text: 'NextSaaS helped me shift from passive saving to active investing—with zero stress.',
+    text: 'Nafa Bank helped me shift from passive saving to active investing—with zero stress.',
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const testimonialReviews: TestimonialReview[] = [
     name: 'Mike Chen',
     position: '@mike_chen',
     image: avatar8,
-    text: "I've seen a 40% increase in my portfolio since switching to NextSaaS. Highly recommended!",
+    text: "I've seen a 40% increase in my portfolio since switching to Nafa Bank. Highly recommended!",
   },
 ];
 

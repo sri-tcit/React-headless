@@ -11,7 +11,7 @@ import { Client } from '@/graphql/client';
 import { CARD_DETAIL_QUERY } from '@/graphql/queries/cardDetail';
 
 export const metadata: Metadata = {
-  title: 'Card Details - NextSaaS',
+  title: 'Card Details - Nafa Bank',
 };
 
 interface CardDetailPageProps {

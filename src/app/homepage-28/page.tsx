@@ -12,8 +12,8 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nuvexa CRM - NextSaaS',
-  description: 'Nuvexa CRM - NextSaaS',
+  title: 'Nuvexa CRM - Nafa Bank',
+  description: 'Nuvexa CRM - Nafa Bank',
 };
 const HomePage28 = () => {
   return (

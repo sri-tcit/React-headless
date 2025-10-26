@@ -56,7 +56,7 @@ const Features = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <p className="max-w-[482px] mx-auto">
-              NextSaaS gives you powerful, easy-to-use tools to help you grow, optimize, and scale your business—without
+              Nafa Bank gives you powerful, easy-to-use tools to help you grow, optimize, and scale your business—without
               the overwhelm.
             </p>
           </RevealAnimation>

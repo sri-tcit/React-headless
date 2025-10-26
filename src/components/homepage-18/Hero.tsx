@@ -165,7 +165,7 @@ const Hero = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
             <p className="max-w-[650px] mx-auto mb-6">
-              &nbsp;Save time and elevate your business with intelligent workflow automation from NextSaaS.
+              &nbsp;Save time and elevate your business with intelligent workflow automation from Nafa Bank.
             </p>
           </RevealAnimation>
           <ul className="list-none mb-14 flex flex-col md:flex-row md:items-center md:justify-center md:flex-wrap lg:flex-nowrap gap-4 md:gap-9 w-fit md:mx-auto">
@@ -216,7 +216,7 @@ const Hero = () => {
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <p className="max-w-[530px]">
-                    At NextSaaS, we leverage AI and strategic insight to enhance business performance. Partner with us
+                    At Nafa Bank, we leverage AI and strategic insight to enhance business performance. Partner with us
                     to unlock your potential.
                   </p>
                 </RevealAnimation>

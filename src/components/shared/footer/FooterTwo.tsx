@@ -40,7 +40,7 @@ const FooterTwo = () => {
             <RevealAnimation delay={0.3}>
               <div className="xl:max-w-[306px]">
                 <figure>
-                  <Image src={darkLogo} alt="NextSass Logo" />
+                  <Image src={darkLogo} alt="Nafa Bank Logo" />
                 </figure>
                 <p className="text-accent/60 text-tagline-1 mt-4 mb-7 font-normal">
                   Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
@@ -178,7 +178,7 @@ const FooterTwo = () => {
           <FooterDivider className="bg-stroke-6 dark:bg-accent/10" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-tagline-1 max-sm:text-tagline-2 text-primary-50 font-normal">
-              Copyright &copy;NextSaaS – smart application for modern business
+              Copyright &copy;Nafa Bank – smart application for modern business
             </p>
           </RevealAnimation>
         </div>

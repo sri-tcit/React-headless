@@ -40,7 +40,7 @@ const About = () => {
                 <div className="lg:max-w-[508px] xl:mx-auto space-y-10 lg:space-y-14">
                   <div className="space-y-3 lg:space-y-5">
                     <RevealAnimation delay={0.2}>
-                      <span className="badge badge-blur">About NextSaaS</span>
+                      <span className="badge badge-blur">About Nafa Bank</span>
                     </RevealAnimation>
                     <div className="space-y-2 lg:space-y-3">
                       <RevealAnimation delay={0.3}>
@@ -61,7 +61,7 @@ const About = () => {
                     <LinkButton
                       href="/about-01"
                       className="btn btn-base btn-dark dark:btn-transparent dark:border hover:btn-primary w-[85%] md:w-auto mx-auto">
-                      More about NextSaaS
+                      More about Nafa Bank
                     </LinkButton>
                   </RevealAnimation>
                 </div>

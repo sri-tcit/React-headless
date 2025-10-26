@@ -5,7 +5,7 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Login Page 02 - NextSaaS',
+  title: 'Login Page 02 - Nafa Bank',
 };
 
 const LoginPage02 = () => {

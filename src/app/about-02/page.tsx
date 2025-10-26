@@ -11,8 +11,8 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AboutPage-02 - NextSaaS',
-  description: 'About Page - NextSaaS',
+  title: 'AboutPage-02 - Nafa Bank',
+  description: 'About Page - Nafa Bank',
 };
 
 const AboutPage02 = () => {

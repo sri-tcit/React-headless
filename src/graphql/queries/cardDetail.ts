@@ -77,7 +77,6 @@ query Cards($slug: String!) {
           }
         }
         ctaSection {
-          id
           label
           title
           description

@@ -12,7 +12,7 @@ const CTA = () => {
             {/* bg img  */}
             <RevealAnimation delay={0.3} direction="left">
               <figure className="absolute max-[376px]:-top-[80%] -top-[88%] md:-top-[78%] lg:-top-[71%] xl:-top-[84%] -left-[65%] md:-left-[35%] lg:-left-[28%] xl:-left-[27%] 2xl:-left-[26%] opacity-80 select-none xl:size-[700px] size-[500px] pointer-events-none">
-                <Image src={gradient43} className="w-full h-full object-cover" alt="NextSass" />
+                <Image src={gradient43} className="w-full h-full object-cover" alt="Nafa Bank" />
               </figure>
             </RevealAnimation>
             {/* cta content  */}
@@ -26,7 +26,7 @@ const CTA = () => {
                 <h2 className="max-w-[649px] mx-auto text-white mb-3">Ready to transform your workflow?</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.4}>
-                <p className="text-accent/60">Download NextSaaS and start making smarter decisions today.</p>
+                <p className="text-accent/60">Download Nafa Bank and start making smarter decisions today.</p>
               </RevealAnimation>
             </div>
             {/* cta btn  */}
@@ -35,7 +35,7 @@ const CTA = () => {
                 <LinkButton
                   href="/pricing-01"
                   className="btn btn-primary btn-md hover:btn-white w-[85%] md:w-auto border-0 dark:hover:btn-accent"
-                  aria-label="Get started with NextSaaS">
+                  aria-label="Get started with Nafa Bank">
                   Get started now
                 </LinkButton>
               </div>

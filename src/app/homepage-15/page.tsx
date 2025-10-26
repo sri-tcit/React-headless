@@ -12,7 +12,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Creative Portfolio - NextSaaS',
+  title: 'Creative Portfolio - Nafa Bank',
 };
 
 const Homepage15 = () => {

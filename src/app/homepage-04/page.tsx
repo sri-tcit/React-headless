@@ -13,8 +13,8 @@ import { Metadata } from 'next';
 import gradient36 from '@public/images/gradient/gradient-36.png';
 
 export const metadata: Metadata = {
-  title: 'Web Hosting - NextSaaS',
-  description: 'Web Hosting of NextSaaS',
+  title: 'Web Hosting - Nafa Bank',
+  description: 'Web Hosting of Nafa Bank',
 };
 
 const HomePage04 = () => {

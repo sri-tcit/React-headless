@@ -18,7 +18,7 @@ const Hero = () => {
             <RevealAnimation delay={0.2}>
               <h1 className="xl:max-w-[1110px] md:max-w-[900px] sm:max-w-[600px] max-w-[400px] mx-auto leading-[1.3]">
                 <span className="hero-text-gradient hero-text-color-2 block">
-                  Elevate your property management game with NextSaaS!
+                  Elevate your property management game with Nafa Bank!
                 </span>
               </h1>
             </RevealAnimation>

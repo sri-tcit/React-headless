@@ -39,7 +39,7 @@ const Hero = () => {
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p>
-                      NextSaaS brings you a powerful, all-in-one smart application designed to streamline your
+                      Nafa Bank brings you a powerful, all-in-one smart application designed to streamline your
                       operations, empower your team, and accelerate growth—no matter your industry.
                     </p>
                   </RevealAnimation>

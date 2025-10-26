@@ -20,7 +20,7 @@ const Hero = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="xl:max-w-[802px] md:max-w-[630px] max-w-[500px] w-full mx-auto">
-                NextSaaS helps organizations identify, analyze, and mitigate risks with a powerful, unified platform.
+                Nafa Bank helps organizations identify, analyze, and mitigate risks with a powerful, unified platform.
                 From policy oversight to advanced analytics—manage risk across the enterprise, all in one place.
               </p>
             </RevealAnimation>
@@ -30,7 +30,7 @@ const Hero = () => {
               <LinkButton
                 href="/contact-us"
                 className="btn btn-secondary btn-xl hover:btn-primary dark:btn-accent w-[90%] md:w-auto mx-auto"
-                aria-label="Get started with NextSaaS">
+                aria-label="Get started with Nafa Bank">
                 Get started now
               </LinkButton>
             </div>
@@ -51,12 +51,12 @@ const Hero = () => {
               <figure className="xl:max-w-[1170px] lg:max-w-[800px] md:max-w-[600px] sm:max-w-[500px] max-w-[450px] w-full mx-auto overflow-hidden rounded-xl md:rounded-[20px] opacity-0">
                 <Image
                   src={hero}
-                  alt="NextSaaS risk management platform interface"
+                  alt="Nafa Bank risk management platform interface"
                   className="size-full object-cover dark:hidden"
                 />
                 <Image
                   src={heroDark}
-                  alt="NextSaaS risk management platform interface"
+                  alt="Nafa Bank risk management platform interface"
                   className="size-full object-cover hidden dark:block"
                 />
               </figure>

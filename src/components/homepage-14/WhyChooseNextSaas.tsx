@@ -55,7 +55,7 @@ const WhyChooseNextSaas = ({ data }: { data: any }) => {
   const rightFeatures = features.slice(midpoint);
   
   return (
-    <section className="py-20 md:py-[90px] lg:py-[100px]" aria-label="Why choose NextSaaS">
+    <section className="py-20 md:py-[90px] lg:py-[100px]" aria-label="Why choose Nafa Bank">
       <div className="main-container">
         <div className="pt-16 md:pt-[100px] max-lg:pb-10 px-5 sm:px-7 md:px-14 relative rounded-4xl bg-white overflow-hidden dark:bg-background-8">
           <RevealAnimation delay={0.8} duration={0.9} offset={200} direction="up">

@@ -9,8 +9,7 @@ export const ABOUT_QUERY = gql`
       label
       title
     }
-    aboutCTA {
-      id
+    ctaSection {
       label
       title
       description

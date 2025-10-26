@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Mobile Management Software - NextSaaS',
+  title: 'Mobile Management Software - Nafa Bank',
 };
 
 const Homepage22 = () => {

@@ -24,7 +24,7 @@ const FeaturesHighlight = () => {
               </RevealAnimation>
               <div className="space-y-3">
                 <RevealAnimation delay={0.3}>
-                  <h2 className="lg:max-w-[465px]">NextSaaS your smart email choice</h2>
+                  <h2 className="lg:max-w-[465px]">Nafa Bank your smart email choice</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
                   <p className="lg:max-w-[508px]">

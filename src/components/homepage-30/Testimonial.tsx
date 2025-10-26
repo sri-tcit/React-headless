@@ -196,7 +196,7 @@ const Testimonial = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="md:max-w-[648px] max-w-[500px] mx-auto text-accent/60">
-                Join a growing community of professionals, gamers, and businesses who rely on NextSaaS for superior
+                Join a growing community of professionals, gamers, and businesses who rely on Nafa Bank for superior
                 security and system performance.
               </p>
             </RevealAnimation>

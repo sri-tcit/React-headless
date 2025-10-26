@@ -8,7 +8,7 @@ import { Fragment } from 'react';
 import FinanceAndOperation from './FinanceAndOperation';
 
 export const metadata: Metadata = {
-  title: 'Use Case - NextSaaS',
+  title: 'Use Case - Nafa Bank',
 };
 
 const Tutorial = () => {
@@ -26,7 +26,7 @@ const Tutorial = () => {
           className="dark:bg-background-5 bg-white"
           badgeClass="!badge-yellow-v2"
           badgeText="Get Started"
-          ctaHeading="Ready to start earning with NextSaaS?"
+          ctaHeading="Ready to start earning with Nafa Bank?"
           description="If you have any questions, feel free to reach out to our team."
           btnClass="hover:btn-secondary dark:hover:btn-accent"
           ctaBtnText="Get started"

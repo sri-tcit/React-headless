@@ -37,7 +37,7 @@ const NavbarFour = ({ className, megaMenuColor, btnClassName }: NavbarFourProps)
           <div>
             <Link href="/">
               <span className="sr-only">Home</span>
-              <Image src={LogoGreen} alt="NextSass" />
+              <Image src={LogoGreen} alt="Nafa Bank" />
             </Link>
           </div>
           <div className="flex items-center gap-[76px]">

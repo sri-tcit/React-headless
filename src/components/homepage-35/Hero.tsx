@@ -86,7 +86,7 @@ const Hero = () => {
 
             <RevealAnimation delay={0.2}>
               <p className="md:max-w-full sm:max-w-[560px] max-w-[390px] mx-auto">
-                NextSaaS brings you borderless, trustless finance—powered by DeFi. Access global tools with zero
+                Nafa Bank brings you borderless, trustless finance—powered by DeFi. Access global tools with zero
                 middlemen and full control.
               </p>
             </RevealAnimation>
@@ -137,7 +137,7 @@ const Hero = () => {
               <RevealAnimation delay={0.9} direction="right" offset={50}>
                 <div className="text-center sm:text-left">
                   <p className="text-tagline-2 font-medium text-secondary dark:text-accent">Join 36,000+</p>
-                  <p className="text-tagline-3">Use NextSaaS for smarter decisions.</p>
+                  <p className="text-tagline-3">Use Nafa Bank for smarter decisions.</p>
                 </div>
               </RevealAnimation>
             </div>
@@ -163,13 +163,13 @@ const Hero = () => {
             <figure className="max-w-[1251px] mx-auto w-full">
               <Image
                 src={heroImage}
-                alt="NextSaaS Hero Dashboard"
+                alt="Nafa Bank Hero Dashboard"
                 className="size-full object-cover dark:hidden"
                 priority
               />
               <Image
                 src={heroImageDark}
-                alt="NextSaaS Hero Dashboard Dark Mode"
+                alt="Nafa Bank Hero Dashboard Dark Mode"
                 className="size-full object-cover hidden dark:block"
                 priority
               />

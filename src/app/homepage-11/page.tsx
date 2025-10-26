@@ -14,8 +14,8 @@ import { projectAchievements } from '@/data/achievements';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Email Marketing - NextSaaS',
-  description: 'Email Marketing of NextSaaS',
+  title: 'Email Marketing - Nafa Bank',
+  description: 'Email Marketing of Nafa Bank',
 };
 const HomePage11 = () => {
   return (

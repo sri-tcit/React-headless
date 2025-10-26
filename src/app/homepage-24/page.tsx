@@ -15,7 +15,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Insurance - NextSaaS',
+  title: 'Insurance - Nafa Bank',
 };
 
 const Homepage24 = () => {
