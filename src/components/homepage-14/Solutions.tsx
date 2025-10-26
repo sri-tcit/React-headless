@@ -1,31 +1,13 @@
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
-const solutionsData = [
-  {
-    id: 1,
-    icon: 'ns-shape-46',
-    title: 'Home Purchase Loans',
-    description: 'Ideal for first-time buyers and repeat homeowners.',
-    headingId: 'home-purchase-heading',
-  },
-  {
-    id: 2,
-    icon: 'ns-shape-15',
-    title: 'Refinance Loans',
-    description: 'Lower your monthly payments or shorten your term to save more over time.',
-    headingId: 'refinance-heading',
-  },
-  {
-    id: 3,
-    icon: 'ns-shape-13',
-    title: 'Reverse Mortgages',
-    description: 'Tap into your home equity while staying right where you are.',
-    headingId: 'reverse-mortgage-heading',
-  },
-];
 
 const Solutions = ({ data }: { data: any }) => {
+
+  const imageurl = process.env.strapi_image_url || '';
+
+
+  console.log('Solutions section data:', data.serviceitems);
   return (
     <section className="py-16 md:py-20 lg:py-[100px]" aria-label="Mortgage Solutions">
       <div className="main-container">
@@ -47,7 +29,13 @@ const Solutions = ({ data }: { data: any }) => {
                 data.serviceitems.map((item, idx) => (
                   <RevealAnimation key={item.id} delay={0.4 + idx * 0.1}>
                     <div className="p-6 sm:p-8 bg-white dark:bg-background-8 rounded-[20px] max-w-full md:max-w-[405px] w-full space-y-6 col-span-12 md:col-span-6 lg:col-span-4">
-                      <span className={`block ${item.icon} text-[52px] text-secondary dark:text-accent`} />
+                      <img
+                        src={`${imageurl}${item.icon.url}`}
+                        alt={item.title}
+                        width={40}
+                        height={40}
+                        className="text-secondary dark:text-accent"
+                      />
                       <div className="space-y-2 max-sm:mt-2">
                         <h3 id={item.headingId} className="text-heading-6 md:text-heading-5">
                           {item.title}

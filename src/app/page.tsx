@@ -36,6 +36,8 @@ const Homepage01 = async () => {
 
   const { herosection, services, whychooseus, processsection, ctaSection, insights } = home;
 
+  
+
   return (
     <Fragment>
       <NavbarOne

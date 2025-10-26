@@ -8,17 +8,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import AboutUsMenu from './mobile-menu/AboutUsMenu';
-import BlogMenu from './mobile-menu/BlogMenu';
-import FeaturesMenu from './mobile-menu/FeaturesMenu';
+import CardsMenu from './mobile-menu/CardsMenu';
 import HomeMenu from './mobile-menu/HomeMenu';
-import IntegrationMenu from './mobile-menu/IntegrationMenu';
-import LoginMenu from './mobile-menu/LoginMenu';
-import PricingMenu from './mobile-menu/PricingMenu';
-import ProcessMenu from './mobile-menu/ProcessMenu';
-import ServicesMenu from './mobile-menu/ServicesMenu';
-import SignUpMenu from './mobile-menu/SignUpMenu';
-import TeamsMenu from './mobile-menu/TeamsMenu';
-import TestimonialMenu from './mobile-menu/TestimonialMenu';
 
 const MobileMenu = () => {
   const { isOpen, closeMenu } = useMobileMenuContext();
@@ -66,28 +57,8 @@ const MobileMenu = () => {
         <div className="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
           <ul>
             <HomeMenu />
-
             <AboutUsMenu />
-
-            <BlogMenu />
-
-            <ServicesMenu />
-
-            <IntegrationMenu />
-
-            <FeaturesMenu />
-
-            <ProcessMenu />
-
-            <TestimonialMenu />
-
-            <TeamsMenu />
-
-            <PricingMenu />
-
-            <LoginMenu />
-
-            <SignUpMenu />
+            <CardsMenu />
           </ul>
         </div>
       </div>

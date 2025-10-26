@@ -3,7 +3,7 @@ import MobileMenuItem from './MobileMenuItem';
 
 const AboutUsMenu = () => {
   return (
-    <MobileMenuItem id="about" title="About us" hasSubmenu={true}>
+    <MobileMenuItem id="about" title="About us" hasSubmenu={false}>
       <ul>
         <li>
           <Link

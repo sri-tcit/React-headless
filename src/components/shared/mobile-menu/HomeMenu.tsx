@@ -5,8 +5,8 @@ const homepages = [...homeMegaMenuColumns[0].items, ...homeMegaMenuColumns[1].it
 
 const HomeMenu = () => {
   return (
-    <MobileMenuItem id="home" title="Home" hasSubmenu={true}>
-      <ul>
+    <MobileMenuItem id="home" title="Home" hasSubmenu={false}>
+      {/* <ul>
         {homepages.map((item) => (
           <li key={item.id}>
             <Link
@@ -16,7 +16,7 @@ const HomeMenu = () => {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </MobileMenuItem>
   );
 };
