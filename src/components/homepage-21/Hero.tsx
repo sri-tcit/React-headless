@@ -1,23 +1,9 @@
-import heroImg from '@public/images/home-page-21/hero-img.png';
-import clientLogo10 from '@public/images/icons/client-logo-10.svg';
-import clientLogo6 from '@public/images/icons/client-logo-6.svg';
-import clientLogo7 from '@public/images/icons/client-logo-7.svg';
-import clientLogo8 from '@public/images/icons/client-logo-8.svg';
-import clientLogo9 from '@public/images/icons/client-logo-9.svg';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
-import AvatarGroup from './AvatarGroup';
-
-const clientLogos = [
-  { id: 1, src: clientLogo6, alt: 'Client logo 6' },
-  { id: 2, src: clientLogo7, alt: 'Client logo 7' },
-  { id: 3, src: clientLogo8, alt: 'Client logo 8' },
-  { id: 4, src: clientLogo9, alt: 'Client logo 9' },
-  { id: 5, src: clientLogo10, alt: 'Client logo 10' },
-];
 
 const Hero = ({ data }: { data: any }) => {
+  const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   console.log('Hero section data:', data);
   return (
     <section className="pt-36 lg:pt-[150px] md:pt-[180px]">
@@ -58,32 +44,18 @@ const Hero = ({ data }: { data: any }) => {
           </div>
           <RevealAnimation delay={0.6} duration={2} useSpring={true} direction="up">
             <figure className="max-w-[300px] md:max-w-[320px] lg:max-w-[400px] 2xl:max-w-[700px] relative -z-0 md:-mt-72 lg:-mt-28 2xl:-mt-36">
-              <Image src={heroImg} alt="Finance management app dashboard" className="size-full object-cover" />
+              {data?.bannerImage?.url && (
+                <Image 
+                  src={imageUrl + data.bannerImage.url} 
+                  alt={data.heading || "Banner image"}
+                  width={data.bannerImage.width || 700}
+                  height={data.bannerImage.height || 700}
+                  className="size-full object-cover" 
+                />
+              )}
             </figure>
           </RevealAnimation>
         </div>
-        {/* <div className="pt-10 md:pt-[100px]">
-          <div className="main-container">
-            <div className="space-y-4 lg:space-y-8">
-              <RevealAnimation delay={0.6}>
-                <p className="text-heading-5 font-normal text-secondary dark:text-accent text-center">
-                  Trusted by industry leaders
-                </p>
-              </RevealAnimation>
-              <RevealAnimation start="top 96%" delay={0.7}>
-                <div className="opacity-0">
-                  <div className="flex items-center flex-wrap gap-x-8 gap-y-4 justify-center">
-                    {clientLogos.map((logo) => (
-                      <figure key={logo.id} className="w-[120px] md:w-[201px]">
-                        <Image src={logo.src} className="size-full dark:invert" alt={logo.alt} />
-                      </figure>
-                    ))}
-                  </div>
-                </div>
-              </RevealAnimation>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

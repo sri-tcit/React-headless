@@ -5,6 +5,11 @@ export const HOME_QUERY = gql`
     home {
       documentId
       herosection {
+       bannerImage {
+          height
+          width
+          url
+        }
         id
         heading
         subheading
