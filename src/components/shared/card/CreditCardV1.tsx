@@ -46,7 +46,8 @@ interface CreditCardV1Props {
 }
 
 const CreditCardV1 = ({ card, className, customLink }: CreditCardV1Props) => {
-  const linkHref = `${customLink}/${card.slug}` || `/card/${card.slug}`;
+  // Use query parameters instead of dynamic routes for better static export compatibility
+  const linkHref = customLink ? `${customLink}?slug=${card.slug}` : `/card-detail?slug=${card.slug}`;
   const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
   
   // Use card banner as hero image if available, otherwise fallback to card image
