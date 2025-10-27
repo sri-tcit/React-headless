@@ -1,52 +1,71 @@
+'use client';
+
 import Pricing from '@/components/homepage-04/Pricing';
 import FooterOne from '@/components/shared/footer/FooterOne';
 import NavbarOne from '@/components/shared/header/NavbarOne';
-import { Metadata } from 'next';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import PageHero from '@/components/shared/PageHero';
-
-import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
-import RevealAnimation from '@/components/animation/RevealAnimation';
-
-import LinkButton from '@/components/ui/button/LinkButton';
-import ProcessFaq from '@/components/process-01/ProcessFaq';
 
 import FaqTab from '@/components/faq/FaqTab';
 import CTA20 from '@/components/homepage-20/CTA';
-import Image from 'next/image';
-import gradient15 from '@public/images/gradient/gradient-15.png';
-import gradient50 from '@public/images/gradient/gradient-50.png';
 import { Client } from '@/graphql/client';
 import { CARDLIST_QUERY } from '@/graphql/queries/cardList';
 
-const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
+const CreditCardsPage = () => {
+  const [cardList, setCardList] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
-export const metadata: Metadata = {
-  title: 'Credit Cards - Nafa Bank',
-};
+  useEffect(() => {
+    const fetchCardList = async () => {
+      try {
+        setLoading(true);
+        const data = await Client.request(CARDLIST_QUERY);
+        console.log('Fetched card list data:', data);
+        setCardList(data?.cardsListing);
+      } catch (err) {
+        console.error('GraphQL fetch error:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-const CreditCardsPage = async() => {
+    fetchCardList();
+  }, []);
 
-   let cardList: any = null;
-  
-    try {
-      const data = await Client.request(CARDLIST_QUERY);
-      console.log('Fetched card list data:', data); 
-      cardList = data?.cardsListing; 
-    } catch (err) {
-      console.error('GraphQL fetch error:', err);
-    }
-   
-    if (!cardList) {
-      return (
-        <main className="flex min-h-screen items-center justify-center">
-          <p className="text-lg text-gray-500">No home data available.</p>
+  if (loading) {
+    return (
+      <Fragment>
+        <NavbarOne
+          className="border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 border"
+          btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
+        />
+        <main className="flex min-h-screen items-center justify-center bg-background-3 dark:bg-background-7">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500 mx-auto mb-4"></div>
+            <p className="text-lg text-gray-500">Loading credit cards...</p>
+          </div>
         </main>
-      );
-    }
+        <FooterOne />
+      </Fragment>
+    );
+  }
 
-    const { ctaSection, faqSection, creditCards } = cardList
+  if (!cardList) {
+    return (
+      <Fragment>
+        <NavbarOne
+          className="border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 border"
+          btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
+        />
+        <main className="flex min-h-screen items-center justify-center bg-background-3 dark:bg-background-7">
+          <p className="text-lg text-gray-500">No card data available.</p>
+        </main>
+        <FooterOne />
+      </Fragment>
+    );
+  }
+
+  const { ctaSection, faqSection, creditCards } = cardList;
 
   return (
     <Fragment>
