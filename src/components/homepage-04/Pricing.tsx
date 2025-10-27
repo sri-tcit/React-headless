@@ -7,7 +7,7 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 
 import { IBlogPost } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
-import BlogCardV1 from '@/components/shared/card/BlogCardV1';
+import CreditCardV1 from '@/components/shared/card/CreditCardV1';
 import LinkButton from '@/components/ui/button/LinkButton';
 
 interface CardBenefit {
@@ -35,6 +35,11 @@ interface CreditCard {
     width: number;
     height: number;
   };
+  cardBanner?: {
+    url: string;
+    width: number;
+    height: number;
+  };
   badges: Badge[];
   buttonText: string;
   buttonLink: string | null;
@@ -54,23 +59,8 @@ interface PricingProps {
 const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
 
 export default function Pricing({ data }: PricingProps) {
-  // Transform credit cards data to IBlogPost format
-  const transformedCards: IBlogPost[] = data?.cards?.map((card) => ({
-    slug: card.slug,
-    title: card.cardName,
-    description: card.cardBenefits?.[0]?.description || '',
-    thumbnail: card.cardImage?.url || '',
-    tag: 'Credit Card',
-    author: '',
-    authorImage: card.cardBenefits?.[0]?.icon?.url || '',
-    publishDate: '',
-    readTime: '',
-    content: '',
-    badges: card.badges, // Pass all badges as array
-  })) || [];
-
-  // Use transformed cards if available, otherwise use blogs
-  const displayData = transformedCards.length > 0 ? transformedCards : blogs;
+  // Use credit cards data directly
+  const displayCards = data?.cards || [];
 
   return (
     // <section className="py-14 md:py-20 xl:py-[120px]">
@@ -83,14 +73,14 @@ export default function Pricing({ data }: PricingProps) {
           <h2>{data?.title || 'Select Credit cards that best suits your needs.'}</h2>
         </RevealAnimation>
       </div>
-      <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
-        {displayData.map((blog, index) => (
-          <RevealAnimation delay={0.6 + index * 0.1} key={blog.slug}>
-            <BlogCardV1 blog={blog} customLink="/card-detail" />
+      <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-10 xl:grid-cols-3 auto-rows-fr">
+        {displayCards.map((card, index) => (
+          <RevealAnimation delay={0.6 + index * 0.1} key={card.slug} className="h-full">
+            <CreditCardV1 card={card} customLink="/card-detail" />
           </RevealAnimation>
         ))}
       </div>
-      <RevealAnimation delay={0.9}>
+      {/* <RevealAnimation delay={0.9}>
         <div className="mt-10 flex justify-center md:mt-14">
           <LinkButton
             href="/blog-01"
@@ -99,7 +89,7 @@ export default function Pricing({ data }: PricingProps) {
             Explore all
           </LinkButton>
         </div>
-      </RevealAnimation>
+      </RevealAnimation> */}
       {/* <div className="grid grid-cols-12 gap-y-5 md:gap-6 xl:gap-8">
           <RevealAnimation delay={0.3}>
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
