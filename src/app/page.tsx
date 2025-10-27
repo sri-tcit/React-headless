@@ -1,7 +1,8 @@
+'use client';
+
 import FooterOne from '@/components/shared/footer/FooterOne';
 import NavbarOne from '@/components/shared/header/NavbarOne';
-import { Metadata } from 'next';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import Blog05 from '@/components/homepage-05/Blog';
 import Integration18 from '@/components/homepage-18/Integration';
 import Solutions14 from '@/components/homepage-14/Solutions';
@@ -11,32 +12,62 @@ import CTA20 from '@/components/homepage-20/CTA';
 import { Client } from '@/graphql/client';
 import { HOME_QUERY } from '@/graphql/queries/home';
 
-export const metadata: Metadata = {
-  title: 'Nafa Bank',
-};
+const Homepage01 = () => {
+  const [home, setHome] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
-const Homepage01 = async () => {
-  let home: any = null;
+  useEffect(() => {
+    const fetchHomeData = async () => {
+      try {
+        setLoading(true);
+        const data = await Client.request(HOME_QUERY);
+        setHome(data?.home);
+        console.log('Fetched home data:', data?.home);
+      } catch (err) {
+        console.error('GraphQL fetch error:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  try {
-    const data = await Client.request(HOME_QUERY);
-    home = data?.home;
-    console.log('Fetched home data:', home);
-  } catch (err) {
-    console.error('GraphQL fetch error:', err);
+    fetchHomeData();
+  }, []);
+
+  if (loading) {
+    return (
+      <Fragment>
+        <NavbarOne
+          className="border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 border"
+          btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
+        />
+        <main className="flex min-h-screen items-center justify-center bg-background-2 dark:bg-background-5">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500 mx-auto mb-4"></div>
+            <p className="text-lg text-gray-500">Loading...</p>
+          </div>
+        </main>
+        <FooterOne />
+      </Fragment>
+    );
   }
 
   if (!home) {
     return (
-      <main className="flex min-h-screen items-center justify-center">
-        <p className="text-lg text-gray-500">No home data available.</p>
-      </main>
+      <Fragment>
+        <NavbarOne
+          className="border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 border"
+          btnClassName="btn-primary hover:btn-white-dark dark:hover:btn-white"
+        />
+        <main className="flex min-h-screen items-center justify-center bg-background-2 dark:bg-background-5">
+          <p className="text-lg text-gray-500">No home data available.</p>
+        </main>
+        <FooterOne />
+      </Fragment>
     );
   }
 
   const { herosection, services, whychooseus, processsection, ctaSection, insights } = home;
 
-  
 
   return (
     <Fragment>

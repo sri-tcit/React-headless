@@ -5,8 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '@/components/animation/RevealAnimation';
 
-import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
 import CreditCardV1 from '@/components/shared/card/CreditCardV1';
 import LinkButton from '@/components/ui/button/LinkButton';
 
@@ -55,8 +53,6 @@ interface CreditCardsData {
 interface PricingProps {
   data?: CreditCardsData;
 }
-
-const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(0, 3);
 
 export default function Pricing({ data }: PricingProps) {
   // Use credit cards data directly
