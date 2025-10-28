@@ -1,49 +1,12 @@
-import avatar1 from '@public/images/avatar/avatar-1.png';
-import avatar2 from '@public/images/avatar/avatar-2.png';
-import avatar3 from '@public/images/avatar/avatar-3.png';
+
 import heroDotVectorBg from '@public/images/home-page-17/hero-dot-vector-bg.svg';
 import heroThumbnail from '@public/images/home-page-17/hero-thumbnail.png';
-import ClientLogo1 from '@public/images/icons/client-logo-1.svg';
-import ClientLogo2 from '@public/images/icons/client-logo-2.svg';
-import ClientLogo3 from '@public/images/icons/client-logo-3.svg';
-import ClientLogo4 from '@public/images/icons/client-logo-4.svg';
-import ClientLogo5 from '@public/images/icons/client-logo-5.svg';
-import ClientLogoDark1 from '@public/images/icons/client-logo-dark-1.svg';
-import ClientLogoDark2 from '@public/images/icons/client-logo-dark-2.svg';
-import ClientLogoDark3 from '@public/images/icons/client-logo-dark-3.svg';
-import ClientLogoDark4 from '@public/images/icons/client-logo-dark-4.svg';
-import ClientLogoDark5 from '@public/images/icons/client-logo-dark-5.svg';
+
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
-const clientLogos = [
-  {
-    src: ClientLogo1,
-    darkSrc: ClientLogoDark1,
-    alt: 'Client company logo 1',
-  },
-  {
-    src: ClientLogo2,
-    darkSrc: ClientLogoDark2,
-    alt: 'Client company logo 2',
-  },
-  {
-    src: ClientLogo3,
-    darkSrc: ClientLogoDark3,
-    alt: 'Client company logo 3',
-  },
-  {
-    src: ClientLogo4,
-    darkSrc: ClientLogoDark4,
-    alt: 'Client company logo 4',
-  },
-  {
-    src: ClientLogo5,
-    darkSrc: ClientLogoDark5,
-    alt: 'Client company logo 5',
-  },
-];
+
 
 interface HeroBanner {
   id: string;

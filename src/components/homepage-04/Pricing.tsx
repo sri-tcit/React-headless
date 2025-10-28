@@ -1,12 +1,8 @@
-import pricingPlan from '@/data/json/pricing/pricingPlanV2.json';
-import { CheckIcon } from '@/icons';
-import gradient4Image from '@public/images/gradient/gradient-4.png';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import RevealAnimation from '@/components/animation/RevealAnimation';
 
 import CreditCardV1 from '@/components/shared/card/CreditCardV1';
-import LinkButton from '@/components/ui/button/LinkButton';
+
 
 interface CardBenefit {
   id: string;

@@ -1,6 +1,5 @@
-import { cn } from '@/utils/cn';
+
 import gradient from '@public/images/gradient/gradient-11.png';
-import holdMobile from '@public/images/home-page-22/hold-mobile.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 

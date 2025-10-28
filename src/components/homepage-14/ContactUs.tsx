@@ -32,44 +32,6 @@ export interface ContactUsProps {
   data?: ContactUsData;
 }
 
-const contactInfo = [
-  {
-    id: 1,
-    type: 'email',
-    text: 'hello@nextsaas.com',
-    href: 'mailto:hello@nextsaas.com',
-    ariaLabel: 'Email us at hello@nextsaas.com',
-    icon: {
-      light: '/images/icons/mail.svg',
-      dark: '/images/icons/mail-white.svg',
-      alt: 'Email icon',
-    },
-  },
-  {
-    id: 2,
-    type: 'phone',
-    text: '(239) 555-0108',
-    href: 'tel:2395550108',
-    ariaLabel: 'Call us at (239) 555-0108',
-    icon: {
-      light: '/images/icons/phone.svg',
-      dark: '/images/icons/phone-white.svg',
-      alt: 'Phone icon',
-    },
-  },
-  {
-    id: 3,
-    type: 'address',
-    text: '1425 Harmony ave, Austin, TX 73301',
-    href: null,
-    ariaLabel: null,
-    icon: {
-      light: '/images/icons/location.svg',
-      dark: '/images/icons/location-white.svg',
-      alt: 'Location icon',
-    },
-  },
-];
 
 const ContactUs = ({ data }: ContactUsProps) => {
   const imageUrl = process.env.NEXT_PUBLIC_STRAPI_IMAGE_URL || '';
@@ -77,7 +39,7 @@ const ContactUs = ({ data }: ContactUsProps) => {
   const description = data?.description || "Have questions about your financial future? Let's talk.";
   const submitBtn = data?.submitBtn || 'Submit';
   const termsLabel = data?.termsLabel || 'I agree with the';
-  
+
   // Use dynamic contact items if available, otherwise use default
   const contactItems = data?.contactItems || [];
   const formFields = data?.contactFormFields || [];
@@ -105,7 +67,7 @@ const ContactUs = ({ data }: ContactUsProps) => {
             </div>
             {/* contact info  */}
             <ul className="space-y-6" aria-label="Contact Information">
-              {contactItems.length > 0 ? (
+              {contactItems.length > 0 && (
                 contactItems.map((item, idx) => {
                   const href = getContactHref(item.value);
                   return (
@@ -135,40 +97,6 @@ const ContactUs = ({ data }: ContactUsProps) => {
                     </RevealAnimation>
                   );
                 })
-              ) : (
-                contactInfo.map((item, idx) => (
-                  <RevealAnimation key={item.id} delay={0.4 + idx * 0.1}>
-                    <li className="flex items-center gap-2">
-                      <span
-                        className="size-10 bg-white dark:bg-background-8 rounded-full flex items-center justify-center"
-                        aria-hidden="true">
-                        <Image
-                          src={item.icon.light}
-                          alt={item.icon.alt}
-                          className="size-6 dark:hidden"
-                          width={24}
-                          height={24}
-                        />
-                        <Image
-                          src={item.icon.dark}
-                          alt={item.icon.alt}
-                          className="size-6 hidden dark:block"
-                          width={24}
-                          height={24}
-                        />
-                      </span>
-                      <p>
-                        {item.href ? (
-                          <Link href={item.href} aria-label={item.ariaLabel || item.text}>
-                            {item.text}
-                          </Link>
-                        ) : (
-                          item.text
-                        )}
-                      </p>
-                    </li>
-                  </RevealAnimation>
-                ))
               )}
             </ul>
           </div>
@@ -180,7 +108,7 @@ const ContactUs = ({ data }: ContactUsProps) => {
                   const isTextarea = field.label.toLowerCase().includes('message');
                   const inputType = field.label.toLowerCase().includes('email') ? 'email' : 'text';
                   const fieldName = field.label.toLowerCase().replace(/\s+/g, '');
-                  
+
                   return (
                     <fieldset key={field.id} className={`w-full flex flex-col gap-2 items-start justify-start ${index === formFields.length - 1 ? 'mb-4' : 'mb-8'}`}>
                       <label htmlFor={fieldName} className="text-tagline-1 text-secondary dark:text-accent font-medium">
