@@ -43,11 +43,11 @@ const Hero = ({ data }: HeroProps) => {
               <Image src={heroDotVectorBg} alt="Decorative background pattern" />
             </figure>
             <div className="main-container relative z-10">
-              <div className="flex flex-col md:flex-row items-center pt-36 md:pt-40 gap-y-16 lg:pt-[150px] xl:pt-[170px] justify-center">
+              <div className="flex flex-col md:flex-row items-center pt-36 md:pt-40 gap-y-16 lg:py-[150px] xl:py-[170px] justify-center">
                 <div>
                   <div className="space-y-2 md:space-y-4 mb-6 md:mb-8 text-center md:text-left">
                     <RevealAnimation delay={0.2}>
-                      <h1 className="max-w-full lg:max-w-[507px] dark:text-secondary">{heading}</h1>
+                      <h1 className="max-w-full lg:max-w-[507px] dark:text-secondary text-[58px]">{heading}</h1>
                     </RevealAnimation>
                     <RevealAnimation delay={0.4}>
                       <p className="md:max-w-[429px] text-secondary/60">
@@ -118,7 +118,7 @@ const Hero = ({ data }: HeroProps) => {
                       alt="App showcase illustration" 
                       width={data?.bannerImage?.width || 643}
                       height={data?.bannerImage?.height || 643}
-                      className="size-full object-cover" 
+                      className="size-full object-cover max-w-[450px] mx-auto" 
                     />
                   </figure>
                 </RevealAnimation>
