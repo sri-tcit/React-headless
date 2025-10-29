@@ -28,7 +28,7 @@ const Integration = ({ data }: { data: any }) => {
               <RevealAnimation delay={0.5}>
                 <div>
                   <LinkButton
-                    href="/process-01"
+                    href="/about"
                     rel="noopener noreferrer"
                     className="btn btn-secondary hover:btn-primary dark:btn-transparent btn-md w-[85%] md:w-auto mx-auto">
                     {data.buttonText}

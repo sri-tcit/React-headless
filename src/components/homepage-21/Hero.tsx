@@ -22,7 +22,7 @@ const Hero = ({ data }: { data: any }) => {
               <RevealAnimation delay={0.3}>
                 <div className="mt-10 lg:mt-14">
                   <LinkButton
-                    href={data.buttonlink || '#'}
+                    href={'/credit-cards'}
                     className="hero-button btn btn-md md:btn-xl hover:btn-secondary btn-primary dark:btn-accent dark:hover:btn-white-dark w-[90%] md:w-auto">
                     {data.buttontext}
                   </LinkButton>
